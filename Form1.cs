@@ -55,6 +55,17 @@ namespace regal_spice
 
             return null;
         }
+        
+        //private void checkHandler(object sender, EventArgs e)
+        //{
+        //    bool confirmCheck = checkBox.Changed;
+        //    if (confirmCheck == true)
+        //    {
+        //        CheckBox checkBox = (CheckBox)sender;
+        //        bool isChecked = checkBox.Checked;
+        //    }
+
+        //}
         private void populateMenu()
         {
             //sides
@@ -221,6 +232,29 @@ namespace regal_spice
             }
         }
 
+        //private void CheckBox_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    foreach (var panel in menuCategories)
+        //    {
+        //        foreach (Control control in panel.Controls)
+        //        {
+
+        //            if ((control is CheckBox) && ((CheckBox)control).Checked)
+        //            {
+        //                addnewItem();
+        //                var test = findItem(control.Text);
+        //                richTextBox1.AppendText("                " + test.price.ToString());
+        //            }
+        //            else
+        //            {
+        //                Console.WriteLine("invalid");
+        //            }
+                    
+        //        } 
+
+        //    }
+        //}
+
 
         private void addnewItem()
         {
@@ -318,23 +352,15 @@ namespace regal_spice
             foreach (CheckBox checkbox in myCheckboxList)
             {
                 string x = checkbox.Name;
-                var test = findItem("Pappadum (2)");
+                var test = findItem(checkbox.Name);
                 richTextBox1.AppendText("                " + test.price.ToString());
-                //need to make sure i cna append the text and clearit should work for all of it
             }
         }
 
-        //private void sumTotal ()
-        //{
-            
-        //}
+
         private void sidesPanel_Paint(object sender, PaintEventArgs e)
         {
-            //List<CheckBox> myCheckboxList = new List<CheckBox>();
-            //foreach (CheckBox checkbox in sidesPanel.Controls)
-            //{
-            //    myCheckboxList.Append(checkbox);
-            //}
+
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -344,17 +370,17 @@ namespace regal_spice
 
         private void checkBox4_CheckedChanged_1(object sender, EventArgs e)
         {
-           
+
             if (checkBox4.Checked)
             {
                 addnewItem();
-                var test = findItem("Pappadum (2)");
+                var test = findItem(checkBox4.Text);
                 richTextBox1.AppendText("                " + test.price.ToString());
 
             }
         }
 
-  
+
 
 
 
