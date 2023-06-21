@@ -79,16 +79,17 @@ namespace regal_spice
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.fiveChange = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.tenChange = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.twentyChange = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.fiftyChange = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.checkBox21 = new System.Windows.Forms.CheckBox();
             this.ricebreadPanel.SuspendLayout();
             this.entreePanel.SuspendLayout();
             this.curryPanel.SuspendLayout();
@@ -295,7 +296,6 @@ namespace regal_spice
             this.entreePanel.Size = new System.Drawing.Size(371, 480);
             this.entreePanel.TabIndex = 44;
             this.entreePanel.Visible = false;
-            this.entreePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.entreePanel_Paint);
             // 
             // checkBox1
             // 
@@ -308,6 +308,7 @@ namespace regal_spice
             this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.Visible = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // checkBox2
             // 
@@ -320,6 +321,7 @@ namespace regal_spice
             this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.Visible = false;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // checkBox5
             // 
@@ -332,6 +334,7 @@ namespace regal_spice
             this.checkBox5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox5.UseVisualStyleBackColor = true;
             this.checkBox5.Visible = false;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // checkBox6
             // 
@@ -344,6 +347,7 @@ namespace regal_spice
             this.checkBox6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox6.UseVisualStyleBackColor = true;
             this.checkBox6.Visible = false;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // checkBox7
             // 
@@ -356,6 +360,7 @@ namespace regal_spice
             this.checkBox7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox7.UseVisualStyleBackColor = true;
             this.checkBox7.Visible = false;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // checkBox8
             // 
@@ -368,6 +373,7 @@ namespace regal_spice
             this.checkBox8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox8.UseVisualStyleBackColor = true;
             this.checkBox8.Visible = false;
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // checkBox9
             // 
@@ -380,6 +386,7 @@ namespace regal_spice
             this.checkBox9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox9.UseVisualStyleBackColor = true;
             this.checkBox9.Visible = false;
+            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // checkBox3
             // 
@@ -392,6 +399,7 @@ namespace regal_spice
             this.checkBox3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.Visible = false;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // chickenSaag
             // 
@@ -416,7 +424,7 @@ namespace regal_spice
             this.goatCurry.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.goatCurry.UseVisualStyleBackColor = true;
             this.goatCurry.Visible = false;
-            this.goatCurry.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
+            this.goatCurry.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // beefVindaloo
             // 
@@ -477,6 +485,7 @@ namespace regal_spice
             this.dalMakhni.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.dalMakhni.UseVisualStyleBackColor = true;
             this.dalMakhni.Visible = false;
+            this.dalMakhni.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // beefRogan
             // 
@@ -528,7 +537,6 @@ namespace regal_spice
             this.curryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.curryPanel.Size = new System.Drawing.Size(371, 480);
             this.curryPanel.TabIndex = 43;
-            this.curryPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // checkBox18
             // 
@@ -541,6 +549,7 @@ namespace regal_spice
             this.checkBox18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox18.UseVisualStyleBackColor = true;
             this.checkBox18.Visible = false;
+            this.checkBox18.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // checkBox15
             // 
@@ -553,6 +562,7 @@ namespace regal_spice
             this.checkBox15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox15.UseVisualStyleBackColor = true;
             this.checkBox15.Visible = false;
+            this.checkBox15.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // checkBox13
             // 
@@ -565,6 +575,7 @@ namespace regal_spice
             this.checkBox13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox13.UseVisualStyleBackColor = true;
             this.checkBox13.Visible = false;
+            this.checkBox13.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // checkBox11
             // 
@@ -577,6 +588,7 @@ namespace regal_spice
             this.checkBox11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox11.UseVisualStyleBackColor = true;
             this.checkBox11.Visible = false;
+            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // checkBox14
             // 
@@ -589,6 +601,7 @@ namespace regal_spice
             this.checkBox14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox14.UseVisualStyleBackColor = true;
             this.checkBox14.Visible = false;
+            this.checkBox14.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // checkBox12
             // 
@@ -601,6 +614,7 @@ namespace regal_spice
             this.checkBox12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox12.UseVisualStyleBackColor = true;
             this.checkBox12.Visible = false;
+            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // checkBox10
             // 
@@ -613,6 +627,7 @@ namespace regal_spice
             this.checkBox10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox10.UseVisualStyleBackColor = true;
             this.checkBox10.Visible = false;
+            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // dessertdrinkPanel
             // 
@@ -628,7 +643,7 @@ namespace regal_spice
             this.dessertdrinkPanel.Controls.Add(this.checkBox15, 0, 3);
             this.dessertdrinkPanel.Controls.Add(this.checkBox11, 1, 2);
             this.dessertdrinkPanel.Controls.Add(this.checkBox14, 0, 0);
-            this.dessertdrinkPanel.Location = new System.Drawing.Point(115, 7);
+            this.dessertdrinkPanel.Location = new System.Drawing.Point(598, 139);
             this.dessertdrinkPanel.Name = "dessertdrinkPanel";
             this.dessertdrinkPanel.RowCount = 4;
             this.dessertdrinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.03493F));
@@ -639,7 +654,6 @@ namespace regal_spice
             this.dessertdrinkPanel.Size = new System.Drawing.Size(371, 480);
             this.dessertdrinkPanel.TabIndex = 45;
             this.dessertdrinkPanel.Visible = false;
-            this.dessertdrinkPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
             // 
             // sidesPanel
             // 
@@ -651,7 +665,7 @@ namespace regal_spice
             this.sidesPanel.Controls.Add(this.checkBox17, 0, 1);
             this.sidesPanel.Controls.Add(this.checkBox19, 1, 1);
             this.sidesPanel.Controls.Add(this.checkBox20, 0, 2);
-            this.sidesPanel.Location = new System.Drawing.Point(115, 4);
+            this.sidesPanel.Location = new System.Drawing.Point(598, 65);
             this.sidesPanel.Name = "sidesPanel";
             this.sidesPanel.RowCount = 4;
             this.sidesPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.17949F));
@@ -661,7 +675,6 @@ namespace regal_spice
             this.sidesPanel.Size = new System.Drawing.Size(371, 480);
             this.sidesPanel.TabIndex = 46;
             this.sidesPanel.Visible = false;
-            this.sidesPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.sidesPanel_Paint);
             // 
             // checkBox4
             // 
@@ -688,7 +701,7 @@ namespace regal_spice
             this.checkBox16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox16.UseVisualStyleBackColor = true;
             this.checkBox16.Visible = false;
-            this.checkBox16.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
+            this.checkBox16.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // checkBox17
             // 
@@ -701,7 +714,7 @@ namespace regal_spice
             this.checkBox17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox17.UseVisualStyleBackColor = true;
             this.checkBox17.Visible = false;
-            this.checkBox17.CheckedChanged += new System.EventHandler(this.checkBox17_CheckedChanged);
+            this.checkBox17.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // checkBox19
             // 
@@ -727,7 +740,7 @@ namespace regal_spice
             this.checkBox20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox20.UseVisualStyleBackColor = true;
             this.checkBox20.Visible = false;
-            this.checkBox20.CheckedChanged += new System.EventHandler(this.checkBox20_CheckedChanged);
+            this.checkBox20.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
             // panel1
             // 
@@ -744,7 +757,6 @@ namespace regal_spice
             this.button2.TabIndex = 49;
             this.button2.Text = "EFTPOS";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -754,7 +766,6 @@ namespace regal_spice
             this.button1.TabIndex = 50;
             this.button1.Text = "Cash";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -764,16 +775,15 @@ namespace regal_spice
             this.button3.TabIndex = 51;
             this.button3.Text = "Clear";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // fiveChange
             // 
-            this.button4.Location = new System.Drawing.Point(492, 1);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(133, 67);
-            this.button4.TabIndex = 52;
-            this.button4.Text = "$5";
-            this.button4.UseVisualStyleBackColor = true;
+            this.fiveChange.Location = new System.Drawing.Point(492, 1);
+            this.fiveChange.Name = "fiveChange";
+            this.fiveChange.Size = new System.Drawing.Size(133, 67);
+            this.fiveChange.TabIndex = 52;
+            this.fiveChange.Text = "$5";
+            this.fiveChange.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -783,7 +793,6 @@ namespace regal_spice
             this.button5.TabIndex = 53;
             this.button5.Text = "EFTPOS";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -794,14 +803,14 @@ namespace regal_spice
             this.button6.Text = "EFTPOS";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // tenChange
             // 
-            this.button7.Location = new System.Drawing.Point(492, 65);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(133, 67);
-            this.button7.TabIndex = 54;
-            this.button7.Text = "$10";
-            this.button7.UseVisualStyleBackColor = true;
+            this.tenChange.Location = new System.Drawing.Point(492, 65);
+            this.tenChange.Name = "tenChange";
+            this.tenChange.Size = new System.Drawing.Size(133, 67);
+            this.tenChange.TabIndex = 54;
+            this.tenChange.Text = "$10";
+            this.tenChange.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
@@ -812,14 +821,14 @@ namespace regal_spice
             this.button8.Text = "Comment";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // twentyChange
             // 
-            this.button9.Location = new System.Drawing.Point(492, 132);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(133, 67);
-            this.button9.TabIndex = 56;
-            this.button9.Text = "$20";
-            this.button9.UseVisualStyleBackColor = true;
+            this.twentyChange.Location = new System.Drawing.Point(492, 132);
+            this.twentyChange.Name = "twentyChange";
+            this.twentyChange.Size = new System.Drawing.Size(133, 67);
+            this.twentyChange.TabIndex = 56;
+            this.twentyChange.Text = "$20";
+            this.twentyChange.UseVisualStyleBackColor = true;
             // 
             // button10
             // 
@@ -830,14 +839,15 @@ namespace regal_spice
             this.button10.Text = "$100";
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // fiftyChange
             // 
-            this.button11.Location = new System.Drawing.Point(492, 198);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(133, 67);
-            this.button11.TabIndex = 58;
-            this.button11.Text = "$50";
-            this.button11.UseVisualStyleBackColor = true;
+            this.fiftyChange.Location = new System.Drawing.Point(492, 198);
+            this.fiftyChange.Name = "fiftyChange";
+            this.fiftyChange.Size = new System.Drawing.Size(133, 67);
+            this.fiftyChange.TabIndex = 58;
+            this.fiftyChange.Text = "$50";
+            this.fiftyChange.UseVisualStyleBackColor = true;
+            this.fiftyChange.Click += new System.EventHandler(this.fiftyChange_Click);
             // 
             // richTextBox1
             // 
@@ -846,7 +856,6 @@ namespace regal_spice
             this.richTextBox1.Size = new System.Drawing.Size(209, 209);
             this.richTextBox1.TabIndex = 60;
             this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // richTextBox2
             // 
@@ -856,21 +865,32 @@ namespace regal_spice
             this.richTextBox2.TabIndex = 61;
             this.richTextBox2.Text = "";
             // 
+            // checkBox21
+            // 
+            this.checkBox21.AutoSize = true;
+            this.checkBox21.Location = new System.Drawing.Point(726, -2);
+            this.checkBox21.Name = "checkBox21";
+            this.checkBox21.Size = new System.Drawing.Size(122, 24);
+            this.checkBox21.TabIndex = 62;
+            this.checkBox21.Text = "checkBox21";
+            this.checkBox21.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1033, 481);
+            this.Controls.Add(this.checkBox21);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.button11);
+            this.Controls.Add(this.fiftyChange);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.twentyChange);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.tenChange);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.fiveChange);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
@@ -887,13 +907,13 @@ namespace regal_spice
             this.Controls.Add(this.entreeButton);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ricebreadPanel.ResumeLayout(false);
             this.entreePanel.ResumeLayout(false);
             this.curryPanel.ResumeLayout(false);
             this.dessertdrinkPanel.ResumeLayout(false);
             this.sidesPanel.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -950,16 +970,17 @@ namespace regal_spice
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button fiveChange;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button tenChange;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button twentyChange;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button fiftyChange;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.CheckBox checkBox21;
     }
 }
 

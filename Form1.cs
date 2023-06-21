@@ -15,7 +15,8 @@ namespace regal_spice
         //a list of the table layout panels - ensures cleaner and more efficient code
         List<TableLayoutPanel> menuCategories = new List<TableLayoutPanel>();
 
-        List<string> orderedList = new List<string>();
+
+        List<Dish> orderedItems = new List<Dish>();
 
 
         List<Dish> menu = new List<Dish>();
@@ -56,16 +57,6 @@ namespace regal_spice
             return null;
         }
         
-        //private void checkHandler(object sender, EventArgs e)
-        //{
-        //    bool confirmCheck = checkBox.Changed;
-        //    if (confirmCheck == true)
-        //    {
-        //        CheckBox checkBox = (CheckBox)sender;
-        //        bool isChecked = checkBox.Checked;
-        //    }
-
-        //}
         private void populateMenu()
         {
             //sides
@@ -75,9 +66,9 @@ namespace regal_spice
             menu.Add(new Dish("Fresh Herbs (Coriander, Mint)", (decimal)0.00));
             //entrees
             menu.Add(new Dish("Veg Samosa", (decimal) 7.50));
-            menu.Add(new Dish("Onion Bhaji", (decimal)7.50));
-            menu.Add(new Dish("Pakora", (decimal)7.50));
-            menu.Add(new Dish("Chicken Tikka", (decimal)9.50));
+            menu.Add(new Dish("Onion Bhaji (2 pieces)", (decimal)7.50));
+            menu.Add(new Dish("Pakora (Veg, Chicken)", (decimal)7.50));
+            menu.Add(new Dish("Chicken Tikka (2 pieces)", (decimal)9.50));
             menu.Add(new Dish("Lamb Cutlet", (decimal)9.50));
             menu.Add(new Dish("Chilli Prawns", (decimal)9.50));
             menu.Add(new Dish("Paneer Tikka", (decimal)9.50));
@@ -93,12 +84,12 @@ namespace regal_spice
             menu.Add(new Dish("Dal Makhni", (decimal)14.90));
             menu.Add(new Dish("Kadai Paneer", (decimal)14.90));
             //rices and breads
-            menu.Add(new Dish("Biriyani", (decimal)17.50));
-            menu.Add(new Dish("Basmati Rice", (decimal)4.70));
-            menu.Add(new Dish("Naan", (decimal)7.50));
-            menu.Add(new Dish("Dosa", (decimal)5.40));
-            menu.Add(new Dish("Roti", (decimal)4.70));
-            menu.Add(new Dish("Poori", (decimal)6.49));
+            menu.Add(new Dish("Biriyani (Chicken, Beef, Goat, Veg", (decimal)17.50));
+            menu.Add(new Dish("Basmati Rice (1 serve)", (decimal)4.70));
+            menu.Add(new Dish("Naan (Butter, Garlic, Cheese)", (decimal)7.50));
+            menu.Add(new Dish("Dosa (1 piece)", (decimal)5.40));
+            menu.Add(new Dish("Roti (1 piece)", (decimal)4.70));
+            menu.Add(new Dish("Poori (1 piece)", (decimal)6.49));
             menu.Add(new Dish("Coconut Rice", (decimal)6.75));
             menu.Add(new Dish("Masala Dosa", (decimal)15.70));
             //desserts
@@ -119,10 +110,7 @@ namespace regal_spice
             }
         }
 
-        private void clearText ()
-        {
-            
-        }
+
 
         //clears the panels, allows the specific panel to be viewed and moves location
         private void entreeButton_Click(object sender, EventArgs e)
@@ -167,24 +155,9 @@ namespace regal_spice
             sidesPanel.Location = new Point(100, 6);
             MakeCheckboxesVisible();
 
-            foreach (CheckBox checkBox in sidesPanel.Controls)
-            {
-                if (checkBox.Checked)
-                {
-                    addnewItem();
-                }
-            }
-
         }
 
         
-
-
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
 
 
@@ -194,27 +167,6 @@ namespace regal_spice
         }
 
 
-        private void listView1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-        
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        private void checkBox2_CheckedChanged_1(object sender, EventArgs e)
-        {
-
-        }
 
 
         //makes the checkboxes visible in each panel
@@ -232,57 +184,7 @@ namespace regal_spice
             }
         }
 
-        //private void CheckBox_CheckedChanged(object sender, EventArgs e)
-        //{
-        //    foreach (var panel in menuCategories)
-        //    {
-        //        foreach (Control control in panel.Controls)
-        //        {
 
-        //            if ((control is CheckBox) && ((CheckBox)control).Checked)
-        //            {
-        //                addnewItem();
-        //                var test = findItem(control.Text);
-        //                richTextBox1.AppendText("                " + test.price.ToString());
-        //            }
-        //            else
-        //            {
-        //                Console.WriteLine("invalid");
-        //            }
-                    
-        //        } 
-
-        //    }
-        //}
-
-
-        private void addnewItem()
-        {
-            orderedList.Clear();
-            foreach (var panel in menuCategories)
-            {
-                foreach (CheckBox checkbox in panel.Controls)
-                {
-                    if (checkbox.Checked)
-                    {
-                        orderedList.Add(checkbox.Text);
-
-                    }
-      
-                }
-            }
-
-
-            foreach (var item in orderedList)
-            {
-                richTextBox1.AppendText(item);
-            }
-        }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
 
         private void biriyani_CheckedChanged(object sender, EventArgs e)
@@ -290,35 +192,8 @@ namespace regal_spice
             DialogResult result = MessageBox.Show("Mods");
         }
 
-        private void entreePanel_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
 
-        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void refreshOrder()
         {
@@ -358,51 +233,100 @@ namespace regal_spice
         }
 
 
-        private void sidesPanel_Paint(object sender, PaintEventArgs e)
-        {
 
+
+        private void refreshTextbox()
+        {
+            richTextBox1.Clear();
+
+            foreach (Dish dish in orderedItems)
+            {
+                //for (int i = 0; i < orderedItems.Count; i++)
+                //{
+                //    if (i == 0)
+                //    {
+                //        richTextBox1.AppendText(dish.name + dish.price.ToString());
+                //    }
+
+                //    else
+                //    {
+                //        richTextBox1.AppendText(Environment.NewLine + dish.name + dish.price.ToString());
+                //    }
+
+                //}
+                richTextBox1.AppendText(Environment.NewLine + dish.name + dish.price.ToString());
+            }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void sumTotal()
         {
-
+            var sum = orderedItems.Sum(item => item.price);
+            richTextBox2.Clear();
+            richTextBox2.AppendText(sum.ToString());
         }
 
         private void checkBox4_CheckedChanged_1(object sender, EventArgs e)
         {
-
-            if (checkBox4.Checked)
+            var myCheckbox = (CheckBox)sender;
+            if (myCheckbox.Checked)
             {
-                addnewItem();
-                var test = findItem(checkBox4.Text);
-                richTextBox1.AppendText("                " + test.price.ToString());
 
+                if (checkBox21.Checked)
+                {
+                    //delete item from list
+                    //orderedItems.Remove();
+                }
+
+                else
+                {
+                    var menuItem = findItem(myCheckbox.Text);
+                    orderedItems.Add(menuItem);
+
+                    refreshTextbox();
+                }
+    
             }
+            sumTotal();
+
+
         }
 
-
-
-
-
-        private void checkBox16_CheckedChanged(object sender, EventArgs e)
+        private void fiftyChange_Click(object sender, EventArgs e)
         {
-
+            var subtract = orderedItems.Sum(item => item.price);
+            var result = 50 - subtract;
+            richTextBox2.Clear();
+            richTextBox2.AppendText(result.ToString());
+            
         }
 
-        private void checkBox17_CheckedChanged(object sender, EventArgs e)
+        private void twentyChange_Click(object sender, EventArgs e)
         {
+            var subtract = orderedItems.Sum(item => item.price);
+            var result = 20 - subtract;
+            richTextBox2.Clear();
+            richTextBox2.AppendText(result.ToString());
 
         }
 
-        private void checkBox20_CheckedChanged(object sender, EventArgs e)
+        private void fiveChange_Click(object sender, EventArgs e)
         {
+            var subtract = orderedItems.Sum(item => item.price);
+            var result = 5 - subtract;
+            richTextBox2.Clear();
+            richTextBox2.AppendText(result.ToString());
 
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        private void tenChange_Click(object sender, EventArgs e)
         {
+            var subtract = orderedItems.Sum(item => item.price);
+            var result = 10 - subtract;
+            richTextBox2.Clear();
+            richTextBox2.AppendText(result.ToString());
 
         }
+
     }
 
 
