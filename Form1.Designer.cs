@@ -1,7 +1,7 @@
 ﻿
 namespace regal_spice
 {
-    partial class Form1
+    partial class orderForm
     {
         /// <summary>
         /// Required designer variable.
@@ -93,7 +93,7 @@ namespace regal_spice
             this.actualClear = new System.Windows.Forms.Button();
             this.fiveChange = new System.Windows.Forms.Button();
             this.clear = new System.Windows.Forms.Button();
-            this.eftposTwo = new System.Windows.Forms.Button();
+            this.reset = new System.Windows.Forms.Button();
             this.tenChange = new System.Windows.Forms.Button();
             this.commentButt = new System.Windows.Forms.Button();
             this.twentyChange = new System.Windows.Forms.Button();
@@ -620,7 +620,7 @@ namespace regal_spice
             this.dessertdrinkPanel.Controls.Add(this.button14, 1, 1);
             this.dessertdrinkPanel.Controls.Add(this.button15, 0, 2);
             this.dessertdrinkPanel.Controls.Add(this.button16, 1, 2);
-            this.dessertdrinkPanel.Location = new System.Drawing.Point(28, 25);
+            this.dessertdrinkPanel.Location = new System.Drawing.Point(601, 16);
             this.dessertdrinkPanel.Name = "dessertdrinkPanel";
             this.dessertdrinkPanel.RowCount = 4;
             this.dessertdrinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.03493F));
@@ -857,15 +857,15 @@ namespace regal_spice
             this.clear.UseVisualStyleBackColor = true;
             this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
-            // eftposTwo
+            // reset
             // 
-            this.eftposTwo.Location = new System.Drawing.Point(619, 65);
-            this.eftposTwo.Name = "eftposTwo";
-            this.eftposTwo.Size = new System.Drawing.Size(133, 67);
-            this.eftposTwo.TabIndex = 55;
-            this.eftposTwo.Text = "RESET";
-            this.eftposTwo.UseVisualStyleBackColor = true;
-            this.eftposTwo.Click += new System.EventHandler(this.eftposTwo_Click);
+            this.reset.Location = new System.Drawing.Point(619, 65);
+            this.reset.Name = "reset";
+            this.reset.Size = new System.Drawing.Size(133, 67);
+            this.reset.TabIndex = 55;
+            this.reset.Text = "RESET";
+            this.reset.UseVisualStyleBackColor = true;
+            this.reset.Click += new System.EventHandler(this.reset_Click);
             // 
             // tenChange
             // 
@@ -961,7 +961,7 @@ namespace regal_spice
             this.sidesPanel.Controls.Add(this.button7, 1, 1);
             this.sidesPanel.Controls.Add(this.button18, 0, 0);
             this.sidesPanel.Controls.Add(this.button4, 1, 0);
-            this.sidesPanel.Location = new System.Drawing.Point(25, 25);
+            this.sidesPanel.Location = new System.Drawing.Point(664, 4);
             this.sidesPanel.Name = "sidesPanel";
             this.sidesPanel.RowCount = 6;
             this.sidesPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.17949F));
@@ -1013,7 +1013,7 @@ namespace regal_spice
             this.insertComment.TabIndex = 63;
             this.insertComment.Visible = false;
             // 
-            // Form1
+            // orderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1026,7 +1026,7 @@ namespace regal_spice
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.commentButt);
             this.Controls.Add(this.twentyChange);
-            this.Controls.Add(this.eftposTwo);
+            this.Controls.Add(this.reset);
             this.Controls.Add(this.tenChange);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.fiveChange);
@@ -1044,7 +1044,7 @@ namespace regal_spice
             this.Controls.Add(this.riceButton);
             this.Controls.Add(this.curryButton);
             this.Controls.Add(this.entreeButton);
-            this.Name = "Form1";
+            this.Name = "orderForm";
             this.Text = "Form1";
             this.ricebreadPanel.ResumeLayout(false);
             this.entreePanel.ResumeLayout(false);
@@ -1076,7 +1076,7 @@ namespace regal_spice
         private System.Windows.Forms.Button actualClear;
         private System.Windows.Forms.Button fiveChange;
         private System.Windows.Forms.Button clear;
-        private System.Windows.Forms.Button eftposTwo;
+        private System.Windows.Forms.Button reset;
         private System.Windows.Forms.Button tenChange;
         private System.Windows.Forms.Button commentButt;
         private System.Windows.Forms.Button twentyChange;

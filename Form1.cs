@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace regal_spice
 {
-    public partial class Form1 : Form
+    public partial class orderForm : Form
     {
         //a list of the table layout panels - ensures cleaner and more efficient code
         List<TableLayoutPanel> menuCategories = new List<TableLayoutPanel>();
@@ -26,12 +26,14 @@ namespace regal_spice
 
 
 
-        public Form1()
+        public orderForm()
         {
             InitializeComponent();
             populatemenuCategories();
             populateMenu();
             clearPanels();
+            entreePanel.Visible = true;
+            entreePanel.Location = new Point(100, 6);
         }
 
         
@@ -232,7 +234,7 @@ namespace regal_spice
 
             if (result < 0)
             {
-                DialogResult x  = MessageBox.Show("Invalid Value - ");
+                DialogResult x  = MessageBox.Show("Invalid Value - Please enter an amount larger than the total price");
             }
             richTextBox2.Clear();
             richTextBox2.AppendText(result.ToString());
@@ -297,7 +299,7 @@ namespace regal_spice
             richTextBox2.AppendText("2");
         }
 
-        private void eftposTwo_Click(object sender, EventArgs e)
+        private void reset_Click(object sender, EventArgs e)
         {
             richTextBox1.Clear();
             richTextBox2.Clear();
