@@ -16,9 +16,10 @@ namespace regal_spice
         List<TableLayoutPanel> menuCategories = new List<TableLayoutPanel>();
 
 
+        //a list of all the currently selected items
         List<Dish> orderedItems = new List<Dish>();
 
-
+        //a list that populates the Dish.cs class
         List<Dish> menu = new List<Dish>();
         
 
@@ -44,6 +45,8 @@ namespace regal_spice
             menuCategories.Add(sidesPanel);
         }
 
+
+        //finds the required item in the class by using its name
         private Dish findItem(string itemName)
         {
             foreach (Dish theDish in menu)
@@ -84,20 +87,26 @@ namespace regal_spice
             menu.Add(new Dish("Dal Makhni", (decimal)14.90));
             menu.Add(new Dish("Kadai Paneer", (decimal)14.90));
             //rices and breads
-            menu.Add(new Dish("Biriyani (Chicken, Beef, Goat, Veg", (decimal)17.50));
+            menu.Add(new Dish("Biryani (Chicken, Beef, Veg)", (decimal)17.50));
             menu.Add(new Dish("Basmati Rice (1 serve)", (decimal)4.70));
-            menu.Add(new Dish("Naan (Butter, Garlic, Cheese)", (decimal)7.50));
+            menu.Add(new Dish("Naan (Cheese, Garlic, Butter)", (decimal)7.50));
             menu.Add(new Dish("Dosa (1 piece)", (decimal)5.40));
             menu.Add(new Dish("Roti (1 piece)", (decimal)4.70));
             menu.Add(new Dish("Poori (1 piece)", (decimal)6.49));
-            menu.Add(new Dish("Coconut Rice", (decimal)6.75));
+            menu.Add(new Dish("Coconut Rice (1 serve)", (decimal)6.75));
             menu.Add(new Dish("Masala Dosa", (decimal)15.70));
             //desserts
             menu.Add(new Dish("Gulab Jamun", (decimal)4.90));
             menu.Add(new Dish("Rasmalai", (decimal)4.90));
             menu.Add(new Dish("Payasam", (decimal)4.90));
-            
+            menu.Add(new Dish("Falooda", (decimal)7.10));
+            menu.Add(new Dish("Kaju Katli (3 pieces)", (decimal)4.90));
+            menu.Add(new Dish("Soft Drink", (decimal)3.90));
+            menu.Add(new Dish("Mango Lassi", (decimal)4.00));
+
+
         }
+
 
 
 
@@ -112,22 +121,22 @@ namespace regal_spice
 
 
 
-        //clears the panels, allows the specific panel to be viewed and moves location
         private void entreeButton_Click(object sender, EventArgs e)
         {
             clearPanels();
             entreePanel.Visible = true;
-            entreePanel.Location = new Point(138, 6);
-            MakeCheckboxesVisible();
+            entreePanel.Location = new Point(100, 6);
+            MakeButtonsVisible();
 
         }
 
+        //refreshes the panels, makes the current panel visible and moves its location, the buttons are also made visible
         private void curryButton_Click(object sender, EventArgs e)
         {
             clearPanels();
             curryPanel.Visible = true;
             curryPanel.Location = new Point(100, 6);
-            MakeCheckboxesVisible();
+            MakeButtonsVisible();
         }
 
         private void riceButton_Click(object sender, EventArgs e)
@@ -135,7 +144,7 @@ namespace regal_spice
             clearPanels();
             ricebreadPanel.Visible = true;
             ricebreadPanel.Location = new Point(100, 6);
-            MakeCheckboxesVisible();
+            MakeButtonsVisible();
 
         }
 
@@ -146,14 +155,14 @@ namespace regal_spice
             clearPanels();
             dessertdrinkPanel.Visible = true;
             dessertdrinkPanel.Location = new Point(100, 6);
-            MakeCheckboxesVisible();
+            MakeButtonsVisible();
         }
         private void sidesButton_Click(object sender, EventArgs e)
         {
             clearPanels();
             sidesPanel.Visible = true;
             sidesPanel.Location = new Point(100, 6);
-            MakeCheckboxesVisible();
+            MakeButtonsVisible();
 
         }
 
@@ -161,24 +170,17 @@ namespace regal_spice
 
 
 
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Mods");
-        }
-
-
-
 
         //makes the checkboxes visible in each panel
-        private void MakeCheckboxesVisible()
+        private void MakeButtonsVisible()
         {
             foreach (var panel in menuCategories)
             {
                 foreach (Control control in panel.Controls)
                 {
-                    if (control is CheckBox checkbox)
+                    if (control is Button button)
                     {
-                        checkbox.Visible = true;
+                        button.Visible = true;
                     }
                 }
             }
@@ -187,54 +189,9 @@ namespace regal_spice
 
 
 
-        private void biriyani_CheckedChanged(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Mods");
-        }
 
 
-
-
-        private void refreshOrder()
-        {
-            List<CheckBox> myCheckboxList = new List<CheckBox>();
-            foreach (CheckBox checkbox in sidesPanel.Controls)
-            {
-                myCheckboxList.Append(checkbox);
-            }
-
-            foreach (CheckBox checkbox in entreePanel.Controls)
-            {
-                myCheckboxList.Append(checkbox);
-            }
-
-  
-            foreach (CheckBox checkbox in curryPanel.Controls)
-            {
-                myCheckboxList.Append(checkbox);
-            }
-
-            foreach (CheckBox checkbox in dessertdrinkPanel.Controls)
-            {
-                myCheckboxList.Append(checkbox);
-            }
-
-            foreach (CheckBox checkbox in ricebreadPanel.Controls)
-            {
-                myCheckboxList.Append(checkbox);
-            }
-
-            foreach (CheckBox checkbox in myCheckboxList)
-            {
-                string x = checkbox.Name;
-                var test = findItem(checkbox.Name);
-                richTextBox1.AppendText("                " + test.price.ToString());
-            }
-        }
-
-
-
-
+        //clears the textbox and appends it with all the selected items + includes their prices
         private void refreshTextbox()
         {
             richTextBox1.Clear();
@@ -258,6 +215,7 @@ namespace regal_spice
             }
         }
 
+        //finds the total price of all the selected items
         private void sumTotal()
         {
             var sum = orderedItems.Sum(item => item.price);
@@ -265,40 +223,24 @@ namespace regal_spice
             richTextBox2.AppendText(sum.ToString());
         }
 
-        private void checkBox4_CheckedChanged_1(object sender, EventArgs e)
-        {
-            var myCheckbox = (CheckBox)sender;
-            if (myCheckbox.Checked)
-            {
 
-                if (checkBox21.Checked)
-                {
-                    //delete item from list
-                    //orderedItems.Remove();
-                }
-
-                else
-                {
-                    var menuItem = findItem(myCheckbox.Text);
-                    orderedItems.Add(menuItem);
-
-                    refreshTextbox();
-                }
-    
-            }
-            sumTotal();
-
-
-        }
-
+        //gives change based on a $50 cash input <-- makes it easier for the waiter to provide change to notes
         private void fiftyChange_Click(object sender, EventArgs e)
         {
             var subtract = orderedItems.Sum(item => item.price);
             var result = 50 - subtract;
+
+            if (result < 0)
+            {
+                DialogResult x  = MessageBox.Show("Invalid Value - ");
+            }
             richTextBox2.Clear();
             richTextBox2.AppendText(result.ToString());
             
+
+
         }
+
 
         private void twentyChange_Click(object sender, EventArgs e)
         {
@@ -327,6 +269,70 @@ namespace regal_spice
 
         }
 
+        //
+        private void button_Click(object sender, EventArgs e)
+        {
+            var myButton = (Button)sender;
+            if (myButton == sender)
+            {
+                var menuItem = findItem(myButton.Text);
+                orderedItems.Add(menuItem);
+                refreshTextbox();
+                sumTotal();
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            richTextBox2.Clear();
+            richTextBox2.AppendText("1");
+        }
+
+        //my current issue is that i need this to be displayed as $12 and also the entree panel isnt showing for some reason
+        private void button10_Click(object sender, EventArgs e)
+        {
+   
+            richTextBox2.Clear(); 
+            richTextBox2.AppendText("2");
+        }
+
+        private void eftposTwo_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Clear();
+            richTextBox2.Clear();
+            orderedItems.Clear();
+        }
+
+        private void commentButton_Click(object sender, EventArgs e)
+        {
+            insertComment.Visible = true;
+            insertComment.Text = ("heyyy");
+            string comment = Console.ReadLine();
+            richTextBox1.Text = comment;
+            //crete _+showtextbox
+
+        }
+
+        private void richTextBox1_SelectionChanged(object sender, EventArgs e)
+        {
+            int index = richTextBox1.SelectionStart;
+            int line = richTextBox1.GetLineFromCharIndex(index);
+            Console.WriteLine("Current pos is" + line);
+        }
+
+        private void clear_Click(object sender, EventArgs e)
+        {
+            if (clear == sender)
+            {
+
+            }
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

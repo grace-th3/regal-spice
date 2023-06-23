@@ -33,67 +33,87 @@ namespace regal_spice
             this.riceButton = new System.Windows.Forms.Button();
             this.dessertButton = new System.Windows.Forms.Button();
             this.sidesButton = new System.Windows.Forms.Button();
-            this.basmatiRice = new System.Windows.Forms.CheckBox();
-            this.dosaOne = new System.Windows.Forms.CheckBox();
-            this.biriyani = new System.Windows.Forms.CheckBox();
-            this.coconutRice = new System.Windows.Forms.CheckBox();
-            this.poori1 = new System.Windows.Forms.CheckBox();
-            this.roti1 = new System.Windows.Forms.CheckBox();
-            this.naanChoice = new System.Windows.Forms.CheckBox();
-            this.masalaDosa = new System.Windows.Forms.CheckBox();
             this.ricebreadPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.button36 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
             this.entreePanel = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.button45 = new System.Windows.Forms.Button();
+            this.button44 = new System.Windows.Forms.Button();
+            this.button43 = new System.Windows.Forms.Button();
+            this.button42 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.chickenSaag = new System.Windows.Forms.CheckBox();
-            this.goatCurry = new System.Windows.Forms.CheckBox();
-            this.beefVindaloo = new System.Windows.Forms.CheckBox();
-            this.chickenTikka = new System.Windows.Forms.CheckBox();
-            this.chanaMasala = new System.Windows.Forms.CheckBox();
-            this.keralaPrawn = new System.Windows.Forms.CheckBox();
-            this.dalMakhni = new System.Windows.Forms.CheckBox();
-            this.beefRogan = new System.Windows.Forms.CheckBox();
-            this.butterChicken = new System.Windows.Forms.CheckBox();
-            this.curryPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.dessertdrinkPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.sidesPanel = new System.Windows.Forms.TableLayoutPanel();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.curryPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.dessertdrinkPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
+            this.button40 = new System.Windows.Forms.Button();
+            this.button41 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.actualEftpos = new System.Windows.Forms.Button();
+            this.actualCas = new System.Windows.Forms.Button();
+            this.actualClear = new System.Windows.Forms.Button();
             this.fiveChange = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.clear = new System.Windows.Forms.Button();
+            this.eftposTwo = new System.Windows.Forms.Button();
             this.tenChange = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.commentButt = new System.Windows.Forms.Button();
             this.twentyChange = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.hundredChange = new System.Windows.Forms.Button();
             this.fiftyChange = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.checkBox21 = new System.Windows.Forms.CheckBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.sidesPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.insertComment = new System.Windows.Forms.TextBox();
             this.ricebreadPanel.SuspendLayout();
             this.entreePanel.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.curryPanel.SuspendLayout();
             this.dessertdrinkPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.sidesPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -152,116 +172,19 @@ namespace regal_spice
             this.sidesButton.UseVisualStyleBackColor = true;
             this.sidesButton.Click += new System.EventHandler(this.sidesButton_Click);
             // 
-            // basmatiRice
-            // 
-            this.basmatiRice.Appearance = System.Windows.Forms.Appearance.Button;
-            this.basmatiRice.Location = new System.Drawing.Point(188, 3);
-            this.basmatiRice.Name = "basmatiRice";
-            this.basmatiRice.Size = new System.Drawing.Size(145, 99);
-            this.basmatiRice.TabIndex = 29;
-            this.basmatiRice.Text = "Basmati Rice (1 serve)";
-            this.basmatiRice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.basmatiRice.UseVisualStyleBackColor = true;
-            this.basmatiRice.Visible = false;
-            // 
-            // dosaOne
-            // 
-            this.dosaOne.Appearance = System.Windows.Forms.Appearance.Button;
-            this.dosaOne.Location = new System.Drawing.Point(188, 138);
-            this.dosaOne.Name = "dosaOne";
-            this.dosaOne.Size = new System.Drawing.Size(145, 101);
-            this.dosaOne.TabIndex = 41;
-            this.dosaOne.Text = "Dosa (1 piece)";
-            this.dosaOne.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.dosaOne.UseVisualStyleBackColor = true;
-            this.dosaOne.Visible = false;
-            // 
-            // biriyani
-            // 
-            this.biriyani.Appearance = System.Windows.Forms.Appearance.Button;
-            this.biriyani.Location = new System.Drawing.Point(3, 3);
-            this.biriyani.Name = "biriyani";
-            this.biriyani.Size = new System.Drawing.Size(145, 101);
-            this.biriyani.TabIndex = 37;
-            this.biriyani.Text = "Biriyani (Chicken, Beef, Goat, Veg)";
-            this.biriyani.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.biriyani.UseVisualStyleBackColor = true;
-            this.biriyani.Visible = false;
-            this.biriyani.CheckedChanged += new System.EventHandler(this.biriyani_CheckedChanged);
-            // 
-            // coconutRice
-            // 
-            this.coconutRice.Appearance = System.Windows.Forms.Appearance.Button;
-            this.coconutRice.Location = new System.Drawing.Point(3, 389);
-            this.coconutRice.Name = "coconutRice";
-            this.coconutRice.Size = new System.Drawing.Size(145, 56);
-            this.coconutRice.TabIndex = 36;
-            this.coconutRice.Text = "Coconut Rice";
-            this.coconutRice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.coconutRice.UseVisualStyleBackColor = true;
-            this.coconutRice.Visible = false;
-            // 
-            // poori1
-            // 
-            this.poori1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.poori1.Location = new System.Drawing.Point(188, 273);
-            this.poori1.Name = "poori1";
-            this.poori1.Size = new System.Drawing.Size(145, 84);
-            this.poori1.TabIndex = 35;
-            this.poori1.Text = "Poori (1 piece)";
-            this.poori1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.poori1.UseVisualStyleBackColor = true;
-            this.poori1.Visible = false;
-            // 
-            // roti1
-            // 
-            this.roti1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.roti1.Location = new System.Drawing.Point(3, 273);
-            this.roti1.Name = "roti1";
-            this.roti1.Size = new System.Drawing.Size(145, 84);
-            this.roti1.TabIndex = 34;
-            this.roti1.Text = "Roti (1 piece)";
-            this.roti1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.roti1.UseVisualStyleBackColor = true;
-            this.roti1.Visible = false;
-            // 
-            // naanChoice
-            // 
-            this.naanChoice.Appearance = System.Windows.Forms.Appearance.Button;
-            this.naanChoice.Location = new System.Drawing.Point(3, 138);
-            this.naanChoice.Name = "naanChoice";
-            this.naanChoice.Size = new System.Drawing.Size(145, 101);
-            this.naanChoice.TabIndex = 33;
-            this.naanChoice.Text = "Naan ( Butter, Garlic, Cheese )";
-            this.naanChoice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.naanChoice.UseVisualStyleBackColor = true;
-            this.naanChoice.Visible = false;
-            // 
-            // masalaDosa
-            // 
-            this.masalaDosa.Appearance = System.Windows.Forms.Appearance.Button;
-            this.masalaDosa.Location = new System.Drawing.Point(188, 389);
-            this.masalaDosa.Name = "masalaDosa";
-            this.masalaDosa.Size = new System.Drawing.Size(145, 56);
-            this.masalaDosa.TabIndex = 32;
-            this.masalaDosa.Text = "Masala Dosa";
-            this.masalaDosa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.masalaDosa.UseVisualStyleBackColor = true;
-            this.masalaDosa.Visible = false;
-            // 
             // ricebreadPanel
             // 
             this.ricebreadPanel.ColumnCount = 2;
             this.ricebreadPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.ricebreadPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.ricebreadPanel.Controls.Add(this.coconutRice, 0, 3);
-            this.ricebreadPanel.Controls.Add(this.dosaOne, 1, 1);
-            this.ricebreadPanel.Controls.Add(this.masalaDosa, 1, 3);
-            this.ricebreadPanel.Controls.Add(this.poori1, 1, 2);
-            this.ricebreadPanel.Controls.Add(this.basmatiRice, 1, 0);
-            this.ricebreadPanel.Controls.Add(this.roti1, 0, 2);
-            this.ricebreadPanel.Controls.Add(this.naanChoice, 0, 1);
-            this.ricebreadPanel.Controls.Add(this.biriyani, 0, 0);
+            this.ricebreadPanel.Controls.Add(this.button36, 1, 3);
+            this.ricebreadPanel.Controls.Add(this.button35, 0, 3);
+            this.ricebreadPanel.Controls.Add(this.button34, 1, 2);
+            this.ricebreadPanel.Controls.Add(this.button33, 0, 2);
+            this.ricebreadPanel.Controls.Add(this.button32, 1, 1);
+            this.ricebreadPanel.Controls.Add(this.button31, 0, 1);
+            this.ricebreadPanel.Controls.Add(this.button30, 1, 0);
+            this.ricebreadPanel.Controls.Add(this.button29, 0, 0);
             this.ricebreadPanel.Location = new System.Drawing.Point(115, 1);
             this.ricebreadPanel.Name = "ricebreadPanel";
             this.ricebreadPanel.RowCount = 4;
@@ -273,19 +196,100 @@ namespace regal_spice
             this.ricebreadPanel.Size = new System.Drawing.Size(371, 480);
             this.ricebreadPanel.TabIndex = 42;
             // 
+            // button36
+            // 
+            this.button36.Location = new System.Drawing.Point(188, 389);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(179, 88);
+            this.button36.TabIndex = 49;
+            this.button36.Text = "Masala Dosa";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button35
+            // 
+            this.button35.Location = new System.Drawing.Point(3, 389);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(179, 88);
+            this.button35.TabIndex = 48;
+            this.button35.Text = "Coconut Rice (1 serve)";
+            this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button34
+            // 
+            this.button34.Location = new System.Drawing.Point(188, 273);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(179, 110);
+            this.button34.TabIndex = 47;
+            this.button34.Text = "Poori (1 piece)";
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button33
+            // 
+            this.button33.Location = new System.Drawing.Point(3, 273);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(179, 110);
+            this.button33.TabIndex = 46;
+            this.button33.Text = "Roti (1 piece)";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button32
+            // 
+            this.button32.Location = new System.Drawing.Point(188, 138);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(179, 124);
+            this.button32.TabIndex = 45;
+            this.button32.Text = "Dosa (1 piece)";
+            this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button31
+            // 
+            this.button31.Location = new System.Drawing.Point(3, 138);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(179, 124);
+            this.button31.TabIndex = 44;
+            this.button31.Text = "Naan (Cheese, Garlic, Butter)";
+            this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button30
+            // 
+            this.button30.Location = new System.Drawing.Point(188, 3);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(179, 124);
+            this.button30.TabIndex = 43;
+            this.button30.Text = "Basmati Rice (1 serve)";
+            this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button29
+            // 
+            this.button29.Location = new System.Drawing.Point(3, 3);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(179, 124);
+            this.button29.TabIndex = 42;
+            this.button29.Text = "Biryani (Chicken, Beef, Veg)";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button_Click);
+            // 
             // entreePanel
             // 
             this.entreePanel.ColumnCount = 2;
             this.entreePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.entreePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.entreePanel.Controls.Add(this.button45, 1, 2);
+            this.entreePanel.Controls.Add(this.button44, 0, 2);
+            this.entreePanel.Controls.Add(this.button43, 1, 1);
+            this.entreePanel.Controls.Add(this.button42, 0, 1);
+            this.entreePanel.Controls.Add(this.button38, 1, 0);
+            this.entreePanel.Controls.Add(this.tableLayoutPanel1, 0, 3);
             this.entreePanel.Controls.Add(this.checkBox1, 0, 3);
-            this.entreePanel.Controls.Add(this.checkBox2, 1, 1);
-            this.entreePanel.Controls.Add(this.checkBox5, 1, 2);
-            this.entreePanel.Controls.Add(this.checkBox6, 1, 0);
-            this.entreePanel.Controls.Add(this.checkBox7, 0, 2);
-            this.entreePanel.Controls.Add(this.checkBox8, 0, 1);
-            this.entreePanel.Controls.Add(this.checkBox9, 0, 0);
-            this.entreePanel.Location = new System.Drawing.Point(135, 1);
+            this.entreePanel.Controls.Add(this.button3, 0, 0);
+            this.entreePanel.Location = new System.Drawing.Point(48, 22);
             this.entreePanel.Name = "entreePanel";
             this.entreePanel.RowCount = 4;
             this.entreePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -295,12 +299,168 @@ namespace regal_spice
             this.entreePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.entreePanel.Size = new System.Drawing.Size(371, 480);
             this.entreePanel.TabIndex = 44;
-            this.entreePanel.Visible = false;
+            // 
+            // button45
+            // 
+            this.button45.Location = new System.Drawing.Point(188, 331);
+            this.button45.Name = "button45";
+            this.button45.Size = new System.Drawing.Size(179, 84);
+            this.button45.TabIndex = 51;
+            this.button45.Text = "Chilli Prawns";
+            this.button45.UseVisualStyleBackColor = true;
+            this.button45.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button44
+            // 
+            this.button44.Location = new System.Drawing.Point(3, 331);
+            this.button44.Name = "button44";
+            this.button44.Size = new System.Drawing.Size(179, 84);
+            this.button44.TabIndex = 50;
+            this.button44.Text = "Lamb Cutlet";
+            this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button43
+            // 
+            this.button43.Location = new System.Drawing.Point(188, 167);
+            this.button43.Name = "button43";
+            this.button43.Size = new System.Drawing.Size(179, 103);
+            this.button43.TabIndex = 49;
+            this.button43.Text = "Chicken Tikka (2 pieces)";
+            this.button43.UseVisualStyleBackColor = true;
+            this.button43.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button42
+            // 
+            this.button42.Location = new System.Drawing.Point(3, 167);
+            this.button42.Name = "button42";
+            this.button42.Size = new System.Drawing.Size(179, 103);
+            this.button42.TabIndex = 48;
+            this.button42.Text = "Pakora (Veg, Chicken)";
+            this.button42.UseVisualStyleBackColor = true;
+            this.button42.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button38
+            // 
+            this.button38.Location = new System.Drawing.Point(188, 3);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(179, 103);
+            this.button38.TabIndex = 47;
+            this.button38.Text = "Onion Bhaji (2 pieces)";
+            this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.button_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.checkBox3, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox4, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox10, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox11, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox12, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox13, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox14, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 421);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(179, 56);
+            this.tableLayoutPanel1.TabIndex = 45;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox3.Location = new System.Drawing.Point(3, -3);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(83, 56);
+            this.checkBox3.TabIndex = 36;
+            this.checkBox3.Text = "Paneer Tikka";
+            this.checkBox3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.Visible = false;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox4.Location = new System.Drawing.Point(92, -45);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(84, 1);
+            this.checkBox4.TabIndex = 41;
+            this.checkBox4.Text = "Chicken Tikka (2 pieces)";
+            this.checkBox4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.Visible = false;
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox10.Location = new System.Drawing.Point(92, -93);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(84, 84);
+            this.checkBox10.TabIndex = 35;
+            this.checkBox10.Text = "Chilli Prawns";
+            this.checkBox10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkBox10.Visible = false;
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox11.Location = new System.Drawing.Point(92, 3);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(84, 1);
+            this.checkBox11.TabIndex = 29;
+            this.checkBox11.Text = "Onion Bhaji (2 pieces)";
+            this.checkBox11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBox11.Visible = false;
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox12.Location = new System.Drawing.Point(3, -93);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(83, 84);
+            this.checkBox12.TabIndex = 34;
+            this.checkBox12.Text = "Lamb Cutlet";
+            this.checkBox12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox12.UseVisualStyleBackColor = true;
+            this.checkBox12.Visible = false;
+            // 
+            // checkBox13
+            // 
+            this.checkBox13.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox13.Location = new System.Drawing.Point(3, -45);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Size = new System.Drawing.Size(83, 1);
+            this.checkBox13.TabIndex = 33;
+            this.checkBox13.Text = "Pakora (Veg, Chicken)";
+            this.checkBox13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox13.UseVisualStyleBackColor = true;
+            this.checkBox13.Visible = false;
+            // 
+            // checkBox14
+            // 
+            this.checkBox14.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox14.Location = new System.Drawing.Point(3, 3);
+            this.checkBox14.Name = "checkBox14";
+            this.checkBox14.Size = new System.Drawing.Size(83, 1);
+            this.checkBox14.TabIndex = 37;
+            this.checkBox14.Text = "Veg Samosa";
+            this.checkBox14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox14.UseVisualStyleBackColor = true;
+            this.checkBox14.Visible = false;
             // 
             // checkBox1
             // 
             this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox1.Location = new System.Drawing.Point(3, 421);
+            this.checkBox1.Location = new System.Drawing.Point(188, 421);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(145, 56);
             this.checkBox1.TabIndex = 36;
@@ -308,225 +468,33 @@ namespace regal_spice
             this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.Visible = false;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
             // 
-            // checkBox2
+            // button3
             // 
-            this.checkBox2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox2.Location = new System.Drawing.Point(188, 167);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(145, 101);
-            this.checkBox2.TabIndex = 41;
-            this.checkBox2.Text = "Chicken Tikka (2 pieces)";
-            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.Visible = false;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox5.Location = new System.Drawing.Point(188, 331);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(145, 84);
-            this.checkBox5.TabIndex = 35;
-            this.checkBox5.Text = "Chilli Prawns";
-            this.checkBox5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox5.UseVisualStyleBackColor = true;
-            this.checkBox5.Visible = false;
-            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox6.Location = new System.Drawing.Point(188, 3);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(145, 99);
-            this.checkBox6.TabIndex = 29;
-            this.checkBox6.Text = "Onion Bhaji (2 pieces)";
-            this.checkBox6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox6.UseVisualStyleBackColor = true;
-            this.checkBox6.Visible = false;
-            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox7.Location = new System.Drawing.Point(3, 331);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(145, 84);
-            this.checkBox7.TabIndex = 34;
-            this.checkBox7.Text = "Lamb Cutlet";
-            this.checkBox7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox7.UseVisualStyleBackColor = true;
-            this.checkBox7.Visible = false;
-            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox8.Location = new System.Drawing.Point(3, 167);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(145, 101);
-            this.checkBox8.TabIndex = 33;
-            this.checkBox8.Text = "Pakora (Veg, Chicken)";
-            this.checkBox8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox8.UseVisualStyleBackColor = true;
-            this.checkBox8.Visible = false;
-            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox9.Location = new System.Drawing.Point(3, 3);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(145, 101);
-            this.checkBox9.TabIndex = 37;
-            this.checkBox9.Text = "Veg Samosa";
-            this.checkBox9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox9.UseVisualStyleBackColor = true;
-            this.checkBox9.Visible = false;
-            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox3.Location = new System.Drawing.Point(186, 445);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(119, 32);
-            this.checkBox3.TabIndex = 39;
-            this.checkBox3.Text = "Kadai Paneer";
-            this.checkBox3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.Visible = false;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
-            // 
-            // chickenSaag
-            // 
-            this.chickenSaag.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chickenSaag.Location = new System.Drawing.Point(186, 3);
-            this.chickenSaag.Name = "chickenSaag";
-            this.chickenSaag.Size = new System.Drawing.Size(182, 101);
-            this.chickenSaag.TabIndex = 26;
-            this.chickenSaag.Text = "Chicken Saag";
-            this.chickenSaag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.chickenSaag.UseVisualStyleBackColor = true;
-            this.chickenSaag.Visible = false;
-            // 
-            // goatCurry
-            // 
-            this.goatCurry.Appearance = System.Windows.Forms.Appearance.Button;
-            this.goatCurry.Location = new System.Drawing.Point(186, 277);
-            this.goatCurry.Name = "goatCurry";
-            this.goatCurry.Size = new System.Drawing.Size(172, 97);
-            this.goatCurry.TabIndex = 22;
-            this.goatCurry.Text = "Goat Curry";
-            this.goatCurry.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.goatCurry.UseVisualStyleBackColor = true;
-            this.goatCurry.Visible = false;
-            this.goatCurry.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
-            // 
-            // beefVindaloo
-            // 
-            this.beefVindaloo.Appearance = System.Windows.Forms.Appearance.Button;
-            this.beefVindaloo.Location = new System.Drawing.Point(3, 277);
-            this.beefVindaloo.Name = "beefVindaloo";
-            this.beefVindaloo.Size = new System.Drawing.Size(177, 97);
-            this.beefVindaloo.TabIndex = 24;
-            this.beefVindaloo.Text = "Beef Vindaloo";
-            this.beefVindaloo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.beefVindaloo.UseVisualStyleBackColor = true;
-            this.beefVindaloo.Visible = false;
-            // 
-            // chickenTikka
-            // 
-            this.chickenTikka.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chickenTikka.Location = new System.Drawing.Point(3, 380);
-            this.chickenTikka.Name = "chickenTikka";
-            this.chickenTikka.Size = new System.Drawing.Size(177, 59);
-            this.chickenTikka.TabIndex = 25;
-            this.chickenTikka.Text = "Chicken Tikka Masala";
-            this.chickenTikka.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.chickenTikka.UseVisualStyleBackColor = true;
-            this.chickenTikka.Visible = false;
-            // 
-            // chanaMasala
-            // 
-            this.chanaMasala.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chanaMasala.Location = new System.Drawing.Point(186, 138);
-            this.chanaMasala.Name = "chanaMasala";
-            this.chanaMasala.Size = new System.Drawing.Size(182, 101);
-            this.chanaMasala.TabIndex = 31;
-            this.chanaMasala.Text = "Chana Masala";
-            this.chanaMasala.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.chanaMasala.UseVisualStyleBackColor = true;
-            this.chanaMasala.Visible = false;
-            // 
-            // keralaPrawn
-            // 
-            this.keralaPrawn.Appearance = System.Windows.Forms.Appearance.Button;
-            this.keralaPrawn.Location = new System.Drawing.Point(186, 380);
-            this.keralaPrawn.Name = "keralaPrawn";
-            this.keralaPrawn.Size = new System.Drawing.Size(182, 59);
-            this.keralaPrawn.TabIndex = 28;
-            this.keralaPrawn.Text = "Kerala Prawn Curry";
-            this.keralaPrawn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.keralaPrawn.UseVisualStyleBackColor = true;
-            this.keralaPrawn.Visible = false;
-            // 
-            // dalMakhni
-            // 
-            this.dalMakhni.Appearance = System.Windows.Forms.Appearance.Button;
-            this.dalMakhni.Location = new System.Drawing.Point(3, 445);
-            this.dalMakhni.Name = "dalMakhni";
-            this.dalMakhni.Size = new System.Drawing.Size(116, 32);
-            this.dalMakhni.TabIndex = 30;
-            this.dalMakhni.Text = "Dal Makhni";
-            this.dalMakhni.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.dalMakhni.UseVisualStyleBackColor = true;
-            this.dalMakhni.Visible = false;
-            this.dalMakhni.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
-            // 
-            // beefRogan
-            // 
-            this.beefRogan.Appearance = System.Windows.Forms.Appearance.Button;
-            this.beefRogan.Location = new System.Drawing.Point(3, 138);
-            this.beefRogan.Name = "beefRogan";
-            this.beefRogan.Size = new System.Drawing.Size(177, 101);
-            this.beefRogan.TabIndex = 23;
-            this.beefRogan.Text = "Beef Roganjosh";
-            this.beefRogan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.beefRogan.UseVisualStyleBackColor = true;
-            this.beefRogan.Visible = false;
-            // 
-            // butterChicken
-            // 
-            this.butterChicken.Appearance = System.Windows.Forms.Appearance.Button;
-            this.butterChicken.Location = new System.Drawing.Point(3, 3);
-            this.butterChicken.Name = "butterChicken";
-            this.butterChicken.Size = new System.Drawing.Size(177, 101);
-            this.butterChicken.TabIndex = 27;
-            this.butterChicken.Text = "Butter Chicken";
-            this.butterChicken.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.butterChicken.UseVisualStyleBackColor = true;
-            this.butterChicken.Visible = false;
+            this.button3.Location = new System.Drawing.Point(3, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(179, 103);
+            this.button3.TabIndex = 46;
+            this.button3.Text = "Veg Samosa";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button_Click);
             // 
             // curryPanel
             // 
             this.curryPanel.ColumnCount = 2;
             this.curryPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.5F));
             this.curryPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.5F));
-            this.curryPanel.Controls.Add(this.butterChicken, 0, 0);
-            this.curryPanel.Controls.Add(this.beefRogan, 0, 1);
-            this.curryPanel.Controls.Add(this.dalMakhni, 0, 4);
-            this.curryPanel.Controls.Add(this.keralaPrawn, 1, 3);
-            this.curryPanel.Controls.Add(this.chanaMasala, 1, 1);
-            this.curryPanel.Controls.Add(this.chickenTikka, 0, 3);
-            this.curryPanel.Controls.Add(this.beefVindaloo, 0, 2);
-            this.curryPanel.Controls.Add(this.goatCurry, 1, 2);
-            this.curryPanel.Controls.Add(this.chickenSaag, 1, 0);
-            this.curryPanel.Controls.Add(this.checkBox3, 1, 4);
-            this.curryPanel.Location = new System.Drawing.Point(138, 1);
+            this.curryPanel.Controls.Add(this.button28, 0, 4);
+            this.curryPanel.Controls.Add(this.button27, 1, 4);
+            this.curryPanel.Controls.Add(this.button19, 0, 3);
+            this.curryPanel.Controls.Add(this.button26, 1, 3);
+            this.curryPanel.Controls.Add(this.button25, 1, 2);
+            this.curryPanel.Controls.Add(this.button24, 0, 2);
+            this.curryPanel.Controls.Add(this.button23, 1, 1);
+            this.curryPanel.Controls.Add(this.button22, 0, 1);
+            this.curryPanel.Controls.Add(this.button21, 1, 0);
+            this.curryPanel.Controls.Add(this.button20, 0, 0);
+            this.curryPanel.Location = new System.Drawing.Point(51, 19);
             this.curryPanel.Name = "curryPanel";
             this.curryPanel.RowCount = 5;
             this.curryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.31507F));
@@ -538,96 +506,105 @@ namespace regal_spice
             this.curryPanel.Size = new System.Drawing.Size(371, 480);
             this.curryPanel.TabIndex = 43;
             // 
-            // checkBox18
+            // button28
             // 
-            this.checkBox18.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox18.Location = new System.Drawing.Point(3, 250);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(153, 103);
-            this.checkBox18.TabIndex = 44;
-            this.checkBox18.Text = "Payasam";
-            this.checkBox18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox18.UseVisualStyleBackColor = true;
-            this.checkBox18.Visible = false;
-            this.checkBox18.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
+            this.button28.Location = new System.Drawing.Point(3, 445);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(177, 32);
+            this.button28.TabIndex = 63;
+            this.button28.Text = "Dal Makhni";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button_Click);
             // 
-            // checkBox15
+            // button27
             // 
-            this.checkBox15.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox15.Location = new System.Drawing.Point(3, 374);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(153, 103);
-            this.checkBox15.TabIndex = 37;
-            this.checkBox15.Text = "Rasmalai";
-            this.checkBox15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox15.UseVisualStyleBackColor = true;
-            this.checkBox15.Visible = false;
-            this.checkBox15.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
+            this.button27.Location = new System.Drawing.Point(186, 445);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(177, 32);
+            this.button27.TabIndex = 62;
+            this.button27.Text = "Kadai Paneer";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button_Click);
             // 
-            // checkBox13
+            // button19
             // 
-            this.checkBox13.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox13.Location = new System.Drawing.Point(3, 122);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(153, 103);
-            this.checkBox13.TabIndex = 34;
-            this.checkBox13.Text = "Mango Lassi";
-            this.checkBox13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox13.UseVisualStyleBackColor = true;
-            this.checkBox13.Visible = false;
-            this.checkBox13.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
+            this.button19.Location = new System.Drawing.Point(3, 380);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(177, 59);
+            this.button19.TabIndex = 61;
+            this.button19.Text = "Chicken Tikka Masala";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button_Click);
             // 
-            // checkBox11
+            // button26
             // 
-            this.checkBox11.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox11.Location = new System.Drawing.Point(187, 250);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(155, 103);
-            this.checkBox11.TabIndex = 35;
-            this.checkBox11.Text = "Falooda";
-            this.checkBox11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox11.UseVisualStyleBackColor = true;
-            this.checkBox11.Visible = false;
-            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
+            this.button26.Location = new System.Drawing.Point(186, 380);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(177, 59);
+            this.button26.TabIndex = 60;
+            this.button26.Text = "Kerala Prawn Curry";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button_Click);
             // 
-            // checkBox14
+            // button25
             // 
-            this.checkBox14.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox14.Location = new System.Drawing.Point(3, 3);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(153, 103);
-            this.checkBox14.TabIndex = 33;
-            this.checkBox14.Text = "Gulab Jamun";
-            this.checkBox14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox14.UseVisualStyleBackColor = true;
-            this.checkBox14.Visible = false;
-            this.checkBox14.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
+            this.button25.Location = new System.Drawing.Point(186, 277);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(177, 97);
+            this.button25.TabIndex = 59;
+            this.button25.Text = "Goat Curry";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button_Click);
             // 
-            // checkBox12
+            // button24
             // 
-            this.checkBox12.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox12.Location = new System.Drawing.Point(187, 3);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(155, 103);
-            this.checkBox12.TabIndex = 29;
-            this.checkBox12.Text = "Soft Drink ";
-            this.checkBox12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox12.UseVisualStyleBackColor = true;
-            this.checkBox12.Visible = false;
-            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
+            this.button24.Location = new System.Drawing.Point(3, 277);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(177, 97);
+            this.button24.TabIndex = 58;
+            this.button24.Text = "Beef Vindaloo";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button_Click);
             // 
-            // checkBox10
+            // button23
             // 
-            this.checkBox10.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox10.Location = new System.Drawing.Point(187, 122);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(155, 103);
-            this.checkBox10.TabIndex = 41;
-            this.checkBox10.Text = "Kaju Katli (3 pieces)\r\n";
-            this.checkBox10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox10.UseVisualStyleBackColor = true;
-            this.checkBox10.Visible = false;
-            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
+            this.button23.Location = new System.Drawing.Point(186, 138);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(177, 119);
+            this.button23.TabIndex = 57;
+            this.button23.Text = "Chana Masala";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(3, 138);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(177, 119);
+            this.button22.TabIndex = 56;
+            this.button22.Text = "Beef Roganjosh";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(186, 3);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(177, 119);
+            this.button21.TabIndex = 55;
+            this.button21.Text = "Chicken Saag";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(3, 3);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(177, 129);
+            this.button20.TabIndex = 54;
+            this.button20.Text = "Butter Chicken";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button_Click);
             // 
             // dessertdrinkPanel
             // 
@@ -636,14 +613,14 @@ namespace regal_spice
             this.dessertdrinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.3125F));
             this.dessertdrinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.dessertdrinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.dessertdrinkPanel.Controls.Add(this.checkBox10, 1, 1);
-            this.dessertdrinkPanel.Controls.Add(this.checkBox12, 1, 0);
-            this.dessertdrinkPanel.Controls.Add(this.checkBox13, 0, 1);
-            this.dessertdrinkPanel.Controls.Add(this.checkBox18, 0, 2);
-            this.dessertdrinkPanel.Controls.Add(this.checkBox15, 0, 3);
-            this.dessertdrinkPanel.Controls.Add(this.checkBox11, 1, 2);
-            this.dessertdrinkPanel.Controls.Add(this.checkBox14, 0, 0);
-            this.dessertdrinkPanel.Location = new System.Drawing.Point(598, 139);
+            this.dessertdrinkPanel.Controls.Add(this.button17, 0, 3);
+            this.dessertdrinkPanel.Controls.Add(this.button11, 0, 0);
+            this.dessertdrinkPanel.Controls.Add(this.button12, 1, 0);
+            this.dessertdrinkPanel.Controls.Add(this.button13, 0, 1);
+            this.dessertdrinkPanel.Controls.Add(this.button14, 1, 1);
+            this.dessertdrinkPanel.Controls.Add(this.button15, 0, 2);
+            this.dessertdrinkPanel.Controls.Add(this.button16, 1, 2);
+            this.dessertdrinkPanel.Location = new System.Drawing.Point(28, 25);
             this.dessertdrinkPanel.Name = "dessertdrinkPanel";
             this.dessertdrinkPanel.RowCount = 4;
             this.dessertdrinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.03493F));
@@ -655,126 +632,211 @@ namespace regal_spice
             this.dessertdrinkPanel.TabIndex = 45;
             this.dessertdrinkPanel.Visible = false;
             // 
-            // sidesPanel
+            // button17
             // 
-            this.sidesPanel.ColumnCount = 2;
-            this.sidesPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.32615F));
-            this.sidesPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.67385F));
-            this.sidesPanel.Controls.Add(this.checkBox4, 0, 0);
-            this.sidesPanel.Controls.Add(this.checkBox16, 1, 0);
-            this.sidesPanel.Controls.Add(this.checkBox17, 0, 1);
-            this.sidesPanel.Controls.Add(this.checkBox19, 1, 1);
-            this.sidesPanel.Controls.Add(this.checkBox20, 0, 2);
-            this.sidesPanel.Location = new System.Drawing.Point(598, 65);
-            this.sidesPanel.Name = "sidesPanel";
-            this.sidesPanel.RowCount = 4;
-            this.sidesPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.17949F));
-            this.sidesPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.82051F));
-            this.sidesPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 125F));
-            this.sidesPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 119F));
-            this.sidesPanel.Size = new System.Drawing.Size(371, 480);
-            this.sidesPanel.TabIndex = 46;
-            this.sidesPanel.Visible = false;
+            this.button17.Location = new System.Drawing.Point(3, 374);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(177, 97);
+            this.button17.TabIndex = 51;
+            this.button17.Text = "Rasmalai";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button_Click);
             // 
-            // checkBox4
+            // button11
             // 
-            this.checkBox4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox4.Location = new System.Drawing.Point(3, 3);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(145, 101);
-            this.checkBox4.TabIndex = 38;
-            this.checkBox4.Tag = ",";
-            this.checkBox4.Text = "Pappadum (2)";
-            this.checkBox4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.Visible = false;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
+            this.button11.Location = new System.Drawing.Point(3, 3);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(177, 97);
+            this.button11.TabIndex = 45;
+            this.button11.Text = "Gulab Jamun";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button_Click);
             // 
-            // checkBox16
+            // button12
             // 
-            this.checkBox16.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox16.Location = new System.Drawing.Point(186, 3);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(145, 101);
-            this.checkBox16.TabIndex = 39;
-            this.checkBox16.Text = "Cucumber Raita";
-            this.checkBox16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox16.UseVisualStyleBackColor = true;
-            this.checkBox16.Visible = false;
-            this.checkBox16.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
+            this.button12.Location = new System.Drawing.Point(187, 3);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(177, 97);
+            this.button12.TabIndex = 46;
+            this.button12.Text = "Soft Drink";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button_Click);
             // 
-            // checkBox17
+            // button13
             // 
-            this.checkBox17.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox17.Location = new System.Drawing.Point(3, 114);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(145, 101);
-            this.checkBox17.TabIndex = 40;
-            this.checkBox17.Text = "Chutney (Lime, Mango, Tomato)";
-            this.checkBox17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox17.UseVisualStyleBackColor = true;
-            this.checkBox17.Visible = false;
-            this.checkBox17.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
+            this.button13.Location = new System.Drawing.Point(3, 122);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(177, 97);
+            this.button13.TabIndex = 47;
+            this.button13.Text = "Mango Lassi";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button_Click);
             // 
-            // checkBox19
+            // button14
             // 
-            this.checkBox19.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox19.Location = new System.Drawing.Point(186, 114);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(145, 101);
-            this.checkBox19.TabIndex = 41;
-            this.checkBox19.Text = "Fresh Herbs (Coriander, Mint)";
-            this.checkBox19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox19.UseVisualStyleBackColor = true;
-            this.checkBox19.Visible = false;
-            this.checkBox19.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
+            this.button14.Location = new System.Drawing.Point(187, 122);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(177, 97);
+            this.button14.TabIndex = 48;
+            this.button14.Text = "Kaju Katli (3 pieces)";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button_Click);
             // 
-            // checkBox20
+            // button15
             // 
-            this.checkBox20.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox20.Location = new System.Drawing.Point(3, 238);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(145, 101);
-            this.checkBox20.TabIndex = 42;
-            this.checkBox20.Text = "Veg Samosa";
-            this.checkBox20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox20.UseVisualStyleBackColor = true;
-            this.checkBox20.Visible = false;
-            this.checkBox20.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged_1);
+            this.button15.Location = new System.Drawing.Point(3, 250);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(177, 97);
+            this.button15.TabIndex = 49;
+            this.button15.Text = "Payasam";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(187, 250);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(177, 97);
+            this.button16.TabIndex = 50;
+            this.button16.Text = "Falooda";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button_Click);
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(693, 265);
+            this.panel1.Controls.Add(this.button37);
+            this.panel1.Controls.Add(this.button39);
+            this.panel1.Controls.Add(this.button40);
+            this.panel1.Controls.Add(this.button41);
+            this.panel1.Controls.Add(this.button10);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Location = new System.Drawing.Point(714, 265);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(339, 213);
+            this.panel1.Size = new System.Drawing.Size(318, 213);
             this.panel1.TabIndex = 47;
+            // 
+            // button37
+            // 
+            this.button37.Location = new System.Drawing.Point(83, 90);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(38, 33);
+            this.button37.TabIndex = 11;
+            this.button37.Text = "7";
+            this.button37.UseVisualStyleBackColor = true;
+            // 
+            // button39
+            // 
+            this.button39.Location = new System.Drawing.Point(191, 90);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(38, 33);
+            this.button39.TabIndex = 9;
+            this.button39.Text = "9";
+            this.button39.UseVisualStyleBackColor = true;
+            // 
+            // button40
+            // 
+            this.button40.Location = new System.Drawing.Point(250, 90);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(38, 33);
+            this.button40.TabIndex = 8;
+            this.button40.Text = ".";
+            this.button40.UseVisualStyleBackColor = true;
+            // 
+            // button41
+            // 
+            this.button41.Location = new System.Drawing.Point(29, 90);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(38, 33);
+            this.button41.TabIndex = 7;
+            this.button41.Text = "6";
+            this.button41.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(85, 20);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(38, 33);
+            this.button10.TabIndex = 6;
+            this.button10.Text = "2";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(139, 20);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(38, 33);
+            this.button8.TabIndex = 5;
+            this.button8.Text = "3";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(193, 20);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(38, 33);
+            this.button6.TabIndex = 4;
+            this.button6.Text = "4";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(252, 20);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(38, 33);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "5";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(492, 265);
+            this.button2.Location = new System.Drawing.Point(139, 90);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(203, 73);
-            this.button2.TabIndex = 49;
-            this.button2.Text = "EFTPOS";
+            this.button2.Size = new System.Drawing.Size(38, 33);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "8";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(492, 333);
+            this.button1.Location = new System.Drawing.Point(31, 20);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 76);
-            this.button1.TabIndex = 50;
-            this.button1.Text = "Cash";
+            this.button1.Size = new System.Drawing.Size(38, 33);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button3
+            // actualEftpos
             // 
-            this.button3.Location = new System.Drawing.Point(492, 406);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(203, 72);
-            this.button3.TabIndex = 51;
-            this.button3.Text = "Clear";
-            this.button3.UseVisualStyleBackColor = true;
+            this.actualEftpos.Location = new System.Drawing.Point(492, 265);
+            this.actualEftpos.Name = "actualEftpos";
+            this.actualEftpos.Size = new System.Drawing.Size(203, 73);
+            this.actualEftpos.TabIndex = 49;
+            this.actualEftpos.Text = "EFTPOS";
+            this.actualEftpos.UseVisualStyleBackColor = true;
+            // 
+            // actualCas
+            // 
+            this.actualCas.Location = new System.Drawing.Point(492, 333);
+            this.actualCas.Name = "actualCas";
+            this.actualCas.Size = new System.Drawing.Size(203, 76);
+            this.actualCas.TabIndex = 50;
+            this.actualCas.Text = "Cash";
+            this.actualCas.UseVisualStyleBackColor = true;
+            // 
+            // actualClear
+            // 
+            this.actualClear.Location = new System.Drawing.Point(492, 406);
+            this.actualClear.Name = "actualClear";
+            this.actualClear.Size = new System.Drawing.Size(203, 72);
+            this.actualClear.TabIndex = 51;
+            this.actualClear.Text = "Clear";
+            this.actualClear.UseVisualStyleBackColor = true;
             // 
             // fiveChange
             // 
@@ -785,23 +847,25 @@ namespace regal_spice
             this.fiveChange.Text = "$5";
             this.fiveChange.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // clear
             // 
-            this.button5.Location = new System.Drawing.Point(619, 1);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(133, 67);
-            this.button5.TabIndex = 53;
-            this.button5.Text = "EFTPOS";
-            this.button5.UseVisualStyleBackColor = true;
+            this.clear.Location = new System.Drawing.Point(619, 1);
+            this.clear.Name = "clear";
+            this.clear.Size = new System.Drawing.Size(133, 67);
+            this.clear.TabIndex = 53;
+            this.clear.Text = "Clear";
+            this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
-            // button6
+            // eftposTwo
             // 
-            this.button6.Location = new System.Drawing.Point(619, 65);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(133, 67);
-            this.button6.TabIndex = 55;
-            this.button6.Text = "EFTPOS";
-            this.button6.UseVisualStyleBackColor = true;
+            this.eftposTwo.Location = new System.Drawing.Point(619, 65);
+            this.eftposTwo.Name = "eftposTwo";
+            this.eftposTwo.Size = new System.Drawing.Size(133, 67);
+            this.eftposTwo.TabIndex = 55;
+            this.eftposTwo.Text = "RESET";
+            this.eftposTwo.UseVisualStyleBackColor = true;
+            this.eftposTwo.Click += new System.EventHandler(this.eftposTwo_Click);
             // 
             // tenChange
             // 
@@ -812,14 +876,15 @@ namespace regal_spice
             this.tenChange.Text = "$10";
             this.tenChange.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // commentButt
             // 
-            this.button8.Location = new System.Drawing.Point(619, 132);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(133, 67);
-            this.button8.TabIndex = 57;
-            this.button8.Text = "Comment";
-            this.button8.UseVisualStyleBackColor = true;
+            this.commentButt.Location = new System.Drawing.Point(619, 132);
+            this.commentButt.Name = "commentButt";
+            this.commentButt.Size = new System.Drawing.Size(133, 67);
+            this.commentButt.TabIndex = 57;
+            this.commentButt.Text = "Comment";
+            this.commentButt.UseVisualStyleBackColor = true;
+            this.commentButt.Click += new System.EventHandler(this.commentButton_Click);
             // 
             // twentyChange
             // 
@@ -830,14 +895,14 @@ namespace regal_spice
             this.twentyChange.Text = "$20";
             this.twentyChange.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // hundredChange
             // 
-            this.button10.Location = new System.Drawing.Point(619, 198);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(133, 67);
-            this.button10.TabIndex = 59;
-            this.button10.Text = "$100";
-            this.button10.UseVisualStyleBackColor = true;
+            this.hundredChange.Location = new System.Drawing.Point(619, 198);
+            this.hundredChange.Name = "hundredChange";
+            this.hundredChange.Size = new System.Drawing.Size(133, 67);
+            this.hundredChange.TabIndex = 59;
+            this.hundredChange.Text = "$100";
+            this.hundredChange.UseVisualStyleBackColor = true;
             // 
             // fiftyChange
             // 
@@ -851,17 +916,19 @@ namespace regal_spice
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(812, 10);
+            this.richTextBox1.Location = new System.Drawing.Point(776, -2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(209, 209);
+            this.richTextBox1.Size = new System.Drawing.Size(259, 233);
             this.richTextBox1.TabIndex = 60;
             this.richTextBox1.Text = "";
+            this.richTextBox1.SelectionChanged += new System.EventHandler(this.richTextBox1_SelectionChanged);
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(812, 218);
+            this.richTextBox2.Location = new System.Drawing.Point(788, 231);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(209, 34);
+            this.richTextBox2.Size = new System.Drawing.Size(247, 34);
             this.richTextBox2.TabIndex = 61;
             this.richTextBox2.Text = "";
             // 
@@ -875,25 +942,97 @@ namespace regal_spice
             this.checkBox21.Text = "checkBox21";
             this.checkBox21.UseVisualStyleBackColor = true;
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(3, 95);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(177, 97);
+            this.button9.TabIndex = 44;
+            this.button9.Text = "Chutney (Lime, Mango, Tomato)";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button_Click);
+            // 
+            // sidesPanel
+            // 
+            this.sidesPanel.ColumnCount = 2;
+            this.sidesPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.32615F));
+            this.sidesPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.67385F));
+            this.sidesPanel.Controls.Add(this.button9, 0, 1);
+            this.sidesPanel.Controls.Add(this.button7, 1, 1);
+            this.sidesPanel.Controls.Add(this.button18, 0, 0);
+            this.sidesPanel.Controls.Add(this.button4, 1, 0);
+            this.sidesPanel.Location = new System.Drawing.Point(25, 25);
+            this.sidesPanel.Name = "sidesPanel";
+            this.sidesPanel.RowCount = 6;
+            this.sidesPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.17949F));
+            this.sidesPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.82051F));
+            this.sidesPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.sidesPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 119F));
+            this.sidesPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.sidesPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.sidesPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.sidesPanel.Size = new System.Drawing.Size(371, 480);
+            this.sidesPanel.TabIndex = 46;
+            this.sidesPanel.Visible = false;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(186, 95);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(177, 97);
+            this.button7.TabIndex = 45;
+            this.button7.Text = "Fresh Herbs (Coriander, Mint)";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(3, 3);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(177, 86);
+            this.button18.TabIndex = 51;
+            this.button18.Text = "Pappadum (2)";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(186, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(177, 86);
+            this.button4.TabIndex = 52;
+            this.button4.Text = "Cucumber Raita";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button_Click);
+            // 
+            // insertComment
+            // 
+            this.insertComment.Location = new System.Drawing.Point(743, 139);
+            this.insertComment.Name = "insertComment";
+            this.insertComment.Size = new System.Drawing.Size(240, 26);
+            this.insertComment.TabIndex = 63;
+            this.insertComment.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1033, 481);
+            this.Controls.Add(this.insertComment);
             this.Controls.Add(this.checkBox21);
-            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.hundredChange);
             this.Controls.Add(this.fiftyChange);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.commentButt);
             this.Controls.Add(this.twentyChange);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.eftposTwo);
             this.Controls.Add(this.tenChange);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.clear);
             this.Controls.Add(this.fiveChange);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.actualClear);
+            this.Controls.Add(this.actualCas);
+            this.Controls.Add(this.actualEftpos);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.sidesPanel);
             this.Controls.Add(this.dessertdrinkPanel);
@@ -909,8 +1048,10 @@ namespace regal_spice
             this.Text = "Form1";
             this.ricebreadPanel.ResumeLayout(false);
             this.entreePanel.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.curryPanel.ResumeLayout(false);
             this.dessertdrinkPanel.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.sidesPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -924,63 +1065,81 @@ namespace regal_spice
         private System.Windows.Forms.Button riceButton;
         private System.Windows.Forms.Button dessertButton;
         private System.Windows.Forms.Button sidesButton;
-        private System.Windows.Forms.CheckBox basmatiRice;
-        private System.Windows.Forms.CheckBox dosaOne;
-        private System.Windows.Forms.CheckBox biriyani;
-        private System.Windows.Forms.CheckBox coconutRice;
-        private System.Windows.Forms.CheckBox poori1;
-        private System.Windows.Forms.CheckBox roti1;
-        private System.Windows.Forms.CheckBox naanChoice;
-        private System.Windows.Forms.CheckBox masalaDosa;
         private System.Windows.Forms.TableLayoutPanel ricebreadPanel;
         private System.Windows.Forms.TableLayoutPanel entreePanel;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox chickenSaag;
-        private System.Windows.Forms.CheckBox goatCurry;
-        private System.Windows.Forms.CheckBox beefVindaloo;
-        private System.Windows.Forms.CheckBox chickenTikka;
-        private System.Windows.Forms.CheckBox chanaMasala;
-        private System.Windows.Forms.CheckBox keralaPrawn;
-        private System.Windows.Forms.CheckBox dalMakhni;
-        private System.Windows.Forms.CheckBox beefRogan;
-        private System.Windows.Forms.CheckBox butterChicken;
         private System.Windows.Forms.TableLayoutPanel curryPanel;
-        private System.Windows.Forms.CheckBox checkBox18;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox10;
         private System.Windows.Forms.TableLayoutPanel dessertdrinkPanel;
-        private System.Windows.Forms.TableLayoutPanel sidesPanel;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.CheckBox checkBox19;
-        private System.Windows.Forms.CheckBox checkBox20;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button actualEftpos;
+        private System.Windows.Forms.Button actualCas;
+        private System.Windows.Forms.Button actualClear;
         private System.Windows.Forms.Button fiveChange;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button clear;
+        private System.Windows.Forms.Button eftposTwo;
         private System.Windows.Forms.Button tenChange;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button commentButt;
         private System.Windows.Forms.Button twentyChange;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button hundredChange;
         private System.Windows.Forms.Button fiftyChange;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.CheckBox checkBox21;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.TableLayoutPanel sidesPanel;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button34;
+        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button button35;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.Button button41;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button45;
+        private System.Windows.Forms.Button button44;
+        private System.Windows.Forms.Button button43;
+        private System.Windows.Forms.Button button42;
+        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.CheckBox checkBox13;
+        private System.Windows.Forms.CheckBox checkBox14;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox insertComment;
     }
 }
 
