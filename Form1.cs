@@ -21,6 +21,9 @@ namespace regal_spice
 
         //a list that populates the Dish.cs class
         List<Dish> menu = new List<Dish>();
+
+        List<string> comments = new List<string>();
+        private int orderNumber = 1;
         
 
 
@@ -34,8 +37,15 @@ namespace regal_spice
             clearPanels();
             entreePanel.Visible = true;
             entreePanel.Location = new Point(100, 6);
+            Properties.Settings.Default.myOrderCounter = orderNumber++;
         }
 
+        private void labelText()
+        {
+            Properties.Settings.Default.myOrderCounter = orderNumber++;
+            label1.Text = "Order " + orderNumber.ToString();
+        }
+        
         
         //populates the list of table layout panels with existing panels
         private void populatemenuCategories()
@@ -196,7 +206,10 @@ namespace regal_spice
         //clears the textbox and appends it with all the selected items + includes their prices
         private void refreshTextbox()
         {
-            richTextBox1.Clear();
+            if (richTextBox1 != insertComment)
+            {
+                richTextBox1.Clear();
+            }
 
             foreach (Dish dish in orderedItems)
             {
@@ -304,14 +317,17 @@ namespace regal_spice
             richTextBox1.Clear();
             richTextBox2.Clear();
             orderedItems.Clear();
+            comments.Clear();
+            labelText();
         }
 
         private void commentButton_Click(object sender, EventArgs e)
         {
             insertComment.Visible = true;
-            insertComment.Text = ("heyyy");
-            string comment = Console.ReadLine();
-            richTextBox1.Text = comment;
+            insertComment.BringToFront();
+            enterComment.Visible = true;
+            enterComment.BringToFront();
+            
             //crete _+showtextbox
 
         }
@@ -323,15 +339,52 @@ namespace regal_spice
             Console.WriteLine("Current pos is" + line);
         }
 
-        private void clear_Click(object sender, EventArgs e)
-        {
-            if (clear == sender)
-            {
+        //private void clear_Click(object sender, EventArgs e)
+        //{
+        //    if (clear == sender)
+        //    {
 
-            }
-        }
+        //    }
+        //}
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button46_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form3 form3 = new Form3();
+            form3.Show();
+        }
+
+        private void enterComment_Click(object sender, EventArgs e)
+        {
+            string commentInput = commentBox.Text;
+            comments.Add(commentInput);
+            commentBox.AppendText(Environment.NewLine + "'" +insertComment.Text + "'");
+            insertComment.Clear();
+            insertComment.Visible = false;
+            enterComment.Visible = false;
+        }
+
+        private void richTextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void entreePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void actualCas_Click(object sender, EventArgs e)
         {
 
         }

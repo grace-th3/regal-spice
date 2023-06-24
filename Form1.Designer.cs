@@ -92,7 +92,6 @@ namespace regal_spice
             this.actualCas = new System.Windows.Forms.Button();
             this.actualClear = new System.Windows.Forms.Button();
             this.fiveChange = new System.Windows.Forms.Button();
-            this.clear = new System.Windows.Forms.Button();
             this.reset = new System.Windows.Forms.Button();
             this.tenChange = new System.Windows.Forms.Button();
             this.commentButt = new System.Windows.Forms.Button();
@@ -101,13 +100,16 @@ namespace regal_spice
             this.fiftyChange = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
             this.button9 = new System.Windows.Forms.Button();
             this.sidesPanel = new System.Windows.Forms.TableLayoutPanel();
             this.button7 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.insertComment = new System.Windows.Forms.TextBox();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button46 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.insertComment = new System.Windows.Forms.RichTextBox();
+            this.enterComment = new System.Windows.Forms.Button();
+            this.commentBox = new System.Windows.Forms.RichTextBox();
             this.ricebreadPanel.SuspendLayout();
             this.entreePanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -289,7 +291,7 @@ namespace regal_spice
             this.entreePanel.Controls.Add(this.tableLayoutPanel1, 0, 3);
             this.entreePanel.Controls.Add(this.checkBox1, 0, 3);
             this.entreePanel.Controls.Add(this.button3, 0, 0);
-            this.entreePanel.Location = new System.Drawing.Point(48, 22);
+            this.entreePanel.Location = new System.Drawing.Point(12, 9);
             this.entreePanel.Name = "entreePanel";
             this.entreePanel.RowCount = 4;
             this.entreePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -299,6 +301,7 @@ namespace regal_spice
             this.entreePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.entreePanel.Size = new System.Drawing.Size(371, 480);
             this.entreePanel.TabIndex = 44;
+            this.entreePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.entreePanel_Paint);
             // 
             // button45
             // 
@@ -494,7 +497,7 @@ namespace regal_spice
             this.curryPanel.Controls.Add(this.button22, 0, 1);
             this.curryPanel.Controls.Add(this.button21, 1, 0);
             this.curryPanel.Controls.Add(this.button20, 0, 0);
-            this.curryPanel.Location = new System.Drawing.Point(51, 19);
+            this.curryPanel.Location = new System.Drawing.Point(18, 1);
             this.curryPanel.Name = "curryPanel";
             this.curryPanel.RowCount = 5;
             this.curryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.31507F));
@@ -620,7 +623,7 @@ namespace regal_spice
             this.dessertdrinkPanel.Controls.Add(this.button14, 1, 1);
             this.dessertdrinkPanel.Controls.Add(this.button15, 0, 2);
             this.dessertdrinkPanel.Controls.Add(this.button16, 1, 2);
-            this.dessertdrinkPanel.Location = new System.Drawing.Point(601, 16);
+            this.dessertdrinkPanel.Location = new System.Drawing.Point(4, 4);
             this.dessertdrinkPanel.Name = "dessertdrinkPanel";
             this.dessertdrinkPanel.RowCount = 4;
             this.dessertdrinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.03493F));
@@ -828,6 +831,7 @@ namespace regal_spice
             this.actualCas.TabIndex = 50;
             this.actualCas.Text = "Cash";
             this.actualCas.UseVisualStyleBackColor = true;
+            this.actualCas.Click += new System.EventHandler(this.actualCas_Click);
             // 
             // actualClear
             // 
@@ -846,16 +850,6 @@ namespace regal_spice
             this.fiveChange.TabIndex = 52;
             this.fiveChange.Text = "$5";
             this.fiveChange.UseVisualStyleBackColor = true;
-            // 
-            // clear
-            // 
-            this.clear.Location = new System.Drawing.Point(619, 1);
-            this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(133, 67);
-            this.clear.TabIndex = 53;
-            this.clear.Text = "Clear";
-            this.clear.UseVisualStyleBackColor = true;
-            this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
             // reset
             // 
@@ -916,9 +910,9 @@ namespace regal_spice
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(776, -2);
+            this.richTextBox1.Location = new System.Drawing.Point(743, -2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(259, 233);
+            this.richTextBox1.Size = new System.Drawing.Size(289, 207);
             this.richTextBox1.TabIndex = 60;
             this.richTextBox1.Text = "";
             this.richTextBox1.SelectionChanged += new System.EventHandler(this.richTextBox1_SelectionChanged);
@@ -926,21 +920,12 @@ namespace regal_spice
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(788, 231);
+            this.richTextBox2.Location = new System.Drawing.Point(747, 231);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(247, 34);
+            this.richTextBox2.Size = new System.Drawing.Size(288, 34);
             this.richTextBox2.TabIndex = 61;
             this.richTextBox2.Text = "";
-            // 
-            // checkBox21
-            // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Location = new System.Drawing.Point(726, -2);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(122, 24);
-            this.checkBox21.TabIndex = 62;
-            this.checkBox21.Text = "checkBox21";
-            this.checkBox21.UseVisualStyleBackColor = true;
+            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
             // button9
             // 
@@ -959,9 +944,9 @@ namespace regal_spice
             this.sidesPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.67385F));
             this.sidesPanel.Controls.Add(this.button9, 0, 1);
             this.sidesPanel.Controls.Add(this.button7, 1, 1);
-            this.sidesPanel.Controls.Add(this.button18, 0, 0);
             this.sidesPanel.Controls.Add(this.button4, 1, 0);
-            this.sidesPanel.Location = new System.Drawing.Point(664, 4);
+            this.sidesPanel.Controls.Add(this.button18, 0, 0);
+            this.sidesPanel.Location = new System.Drawing.Point(12, 1);
             this.sidesPanel.Name = "sidesPanel";
             this.sidesPanel.RowCount = 6;
             this.sidesPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.17949F));
@@ -985,16 +970,6 @@ namespace regal_spice
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button_Click);
             // 
-            // button18
-            // 
-            this.button18.Location = new System.Drawing.Point(3, 3);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(177, 86);
-            this.button18.TabIndex = 51;
-            this.button18.Text = "Pappadum (2)";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button_Click);
-            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(186, 3);
@@ -1005,45 +980,96 @@ namespace regal_spice
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button_Click);
             // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(3, 3);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(177, 86);
+            this.button18.TabIndex = 51;
+            this.button18.Text = "Pappadum (2)";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button46
+            // 
+            this.button46.Location = new System.Drawing.Point(619, 1);
+            this.button46.Name = "button46";
+            this.button46.Size = new System.Drawing.Size(133, 68);
+            this.button46.TabIndex = 64;
+            this.button46.Text = "Home";
+            this.button46.UseVisualStyleBackColor = true;
+            this.button46.Click += new System.EventHandler(this.button46_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(864, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.TabIndex = 65;
+            this.label1.Text = "label1";
+            // 
             // insertComment
             // 
-            this.insertComment.Location = new System.Drawing.Point(743, 139);
+            this.insertComment.Location = new System.Drawing.Point(336, 140);
             this.insertComment.Name = "insertComment";
-            this.insertComment.Size = new System.Drawing.Size(240, 26);
-            this.insertComment.TabIndex = 63;
+            this.insertComment.Size = new System.Drawing.Size(329, 119);
+            this.insertComment.TabIndex = 66;
+            this.insertComment.Text = "";
             this.insertComment.Visible = false;
+            // 
+            // enterComment
+            // 
+            this.enterComment.Location = new System.Drawing.Point(460, 285);
+            this.enterComment.Name = "enterComment";
+            this.enterComment.Size = new System.Drawing.Size(75, 33);
+            this.enterComment.TabIndex = 67;
+            this.enterComment.Text = "Enter";
+            this.enterComment.UseVisualStyleBackColor = true;
+            this.enterComment.Visible = false;
+            this.enterComment.Click += new System.EventHandler(this.enterComment_Click);
+            // 
+            // commentBox
+            // 
+            this.commentBox.Location = new System.Drawing.Point(747, 198);
+            this.commentBox.Name = "commentBox";
+            this.commentBox.Size = new System.Drawing.Size(288, 34);
+            this.commentBox.TabIndex = 69;
+            this.commentBox.Text = "";
             // 
             // orderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1033, 481);
-            this.Controls.Add(this.insertComment);
-            this.Controls.Add(this.checkBox21);
+            this.Controls.Add(this.commentBox);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button46);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.hundredChange);
             this.Controls.Add(this.fiftyChange);
-            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.commentButt);
             this.Controls.Add(this.twentyChange);
+            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.reset);
             this.Controls.Add(this.tenChange);
-            this.Controls.Add(this.clear);
             this.Controls.Add(this.fiveChange);
             this.Controls.Add(this.actualClear);
             this.Controls.Add(this.actualCas);
             this.Controls.Add(this.actualEftpos);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.sidesPanel);
-            this.Controls.Add(this.dessertdrinkPanel);
-            this.Controls.Add(this.entreePanel);
-            this.Controls.Add(this.curryPanel);
             this.Controls.Add(this.ricebreadPanel);
             this.Controls.Add(this.sidesButton);
             this.Controls.Add(this.dessertButton);
             this.Controls.Add(this.riceButton);
             this.Controls.Add(this.curryButton);
             this.Controls.Add(this.entreeButton);
+            this.Controls.Add(this.sidesPanel);
+            this.Controls.Add(this.dessertdrinkPanel);
+            this.Controls.Add(this.entreePanel);
+            this.Controls.Add(this.curryPanel);
+            this.Controls.Add(this.insertComment);
+            this.Controls.Add(this.enterComment);
             this.Name = "orderForm";
             this.Text = "Form1";
             this.ricebreadPanel.ResumeLayout(false);
@@ -1075,7 +1101,6 @@ namespace regal_spice
         private System.Windows.Forms.Button actualCas;
         private System.Windows.Forms.Button actualClear;
         private System.Windows.Forms.Button fiveChange;
-        private System.Windows.Forms.Button clear;
         private System.Windows.Forms.Button reset;
         private System.Windows.Forms.Button tenChange;
         private System.Windows.Forms.Button commentButt;
@@ -1084,7 +1109,6 @@ namespace regal_spice
         private System.Windows.Forms.Button fiftyChange;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.CheckBox checkBox21;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
@@ -1139,7 +1163,11 @@ namespace regal_spice
         private System.Windows.Forms.CheckBox checkBox13;
         private System.Windows.Forms.CheckBox checkBox14;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox insertComment;
+        private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox insertComment;
+        private System.Windows.Forms.Button enterComment;
+        private System.Windows.Forms.RichTextBox commentBox;
     }
 }
 
