@@ -364,30 +364,28 @@ namespace regal_spice
             string commentInput = commentBox.Text;
             comments.Add(commentInput);
             commentBox.AppendText(Environment.NewLine + "'" +insertComment.Text + "'");
-            insertComment.Clear();
             insertComment.Visible = false;
             enterComment.Visible = false;
         }
-
-        private void richTextBox3_TextChanged(object sender, EventArgs e)
+        private string appendingContents = "";
+        private void insertComment_TextChanged(object sender, EventArgs e)
         {
+            string userInput = insertComment.Text;
 
+            // Check if the appending contents have been cleared
+            if (string.IsNullOrEmpty(userInput) && !string.IsNullOrEmpty(appendingContents))
+            {
+                // Clear the TextBox contents
+                insertComment.Clear();
+                appendingContents = "";
+            }
+            else
+            {
+                // Update the appending contents
+                appendingContents = userInput;
+            }
         }
 
-        private void entreePanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void richTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void actualCas_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 
 

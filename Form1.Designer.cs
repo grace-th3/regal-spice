@@ -301,7 +301,6 @@ namespace regal_spice
             this.entreePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.entreePanel.Size = new System.Drawing.Size(371, 480);
             this.entreePanel.TabIndex = 44;
-            this.entreePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.entreePanel_Paint);
             // 
             // button45
             // 
@@ -831,7 +830,6 @@ namespace regal_spice
             this.actualCas.TabIndex = 50;
             this.actualCas.Text = "Cash";
             this.actualCas.UseVisualStyleBackColor = true;
-            this.actualCas.Click += new System.EventHandler(this.actualCas_Click);
             // 
             // actualClear
             // 
@@ -925,7 +923,6 @@ namespace regal_spice
             this.richTextBox2.Size = new System.Drawing.Size(288, 34);
             this.richTextBox2.TabIndex = 61;
             this.richTextBox2.Text = "";
-            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
             // button9
             // 
