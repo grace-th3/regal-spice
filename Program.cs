@@ -11,6 +11,7 @@ namespace regal_spice
         /// <summary>
         /// The main entry point for the application.
         public static decimal total = 0;
+
         
         /// </summary>
         [STAThread]

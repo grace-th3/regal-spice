@@ -24,11 +24,8 @@ namespace regal_spice
 
         List<string> comments = new List<string>();
 
-
-        public decimal amountTotal = Program.total = Properties.Settings.Default.totalRev;
+        //public decimal amountTotal;
         
-       
-
         decimal sumTot = 0;
 
         decimal stringNum = 0;
@@ -51,9 +48,8 @@ namespace regal_spice
             label1.Text = ("Order " + Properties.Settings.Default.myOrderCounter);
         }
 
- 
         
-       
+
         
         //populates the list of table layout panels with existing panels
         private void populatemenuCategories()
@@ -354,8 +350,9 @@ namespace regal_spice
             DialogResult = MessageBox.Show("Order Successfully Processed!");
 
             endofOrder();
-            amountTotal = amountTotal + sumTot;
-            Program.total += sumTot;
+            //Program.total += sumTot;
+            Properties.Settings.Default.Save();
+       
         } 
 
         private decimal convStringToDec(string inString)

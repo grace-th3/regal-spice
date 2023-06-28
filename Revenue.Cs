@@ -23,8 +23,11 @@ namespace regal_spice
             label2.Text = Program.total.ToString();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void toolStripButton2_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Form3 form3 = new Form3();
+            form3.Show();
 
         }
     }
