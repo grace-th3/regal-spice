@@ -44,9 +44,9 @@ namespace regal_spice
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(304, 169);
+            this.textBox1.Location = new System.Drawing.Point(266, 292);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 26);
+            this.textBox1.Size = new System.Drawing.Size(312, 26);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -63,6 +63,7 @@ namespace regal_spice
             this.DoubleBuffered = true;
             this.Name = "Form4";
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

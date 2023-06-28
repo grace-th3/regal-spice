@@ -42,5 +42,12 @@ namespace regal_spice
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Settings settings = new Settings();
+            settings.Show();
+        }
     }
 }

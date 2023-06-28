@@ -22,7 +22,7 @@ namespace regal_spice
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string desiredValue = "4336"; // The desired value to compare against//
+            string desiredValue = "password"; // The desired value to compare against//
             
             if (passwordBox.Text == desiredValue)
             {

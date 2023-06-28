@@ -10,20 +10,19 @@ using System.Windows.Forms;
 
 namespace regal_spice
 {
-    public partial class Form4 : Form
+    public partial class Form5 : Form
     {
-        public Form4()
+        public Form5()
         {
             InitializeComponent();
         }
 
-
-        private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
+        private void populateReceipt()
         {
-
+            label1.Text = Program.orderNum;
         }
 
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -33,9 +32,11 @@ namespace regal_spice
 
         }
 
-        private void Form4_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            orderForm form1 = new orderForm();
+            form1.Show();
         }
     }
 }

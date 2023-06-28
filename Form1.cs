@@ -16,9 +16,6 @@ namespace regal_spice
         List<TableLayoutPanel> menuCategories = new List<TableLayoutPanel>();
 
 
-        //a list of all the currently selected items
-        List<Dish> orderedItems = new List<Dish>();
-
         //a list that populates the Dish.cs class
         List<Dish> menu = new List<Dish>();
 
@@ -29,6 +26,7 @@ namespace regal_spice
         decimal sumTot = 0;
 
         decimal stringNum = 0;
+
 
 
         public orderForm()
@@ -45,7 +43,8 @@ namespace regal_spice
         {
             Properties.Settings.Default.myOrderCounter++;
             Properties.Settings.Default.Save();
-            label1.Text = ("Order " + Properties.Settings.Default.myOrderCounter);
+            Program.orderNum = ("Order " + Properties.Settings.Default.myOrderCounter);
+            label1.Text = Program.orderNum;
         }
 
         
@@ -142,7 +141,6 @@ namespace regal_spice
             clearPanels();
             entreePanel.Visible = true;
             entreePanel.Location = new Point(100, 6);
-            MakeButtonsVisible();
 
         }
 
@@ -152,7 +150,6 @@ namespace regal_spice
             clearPanels();
             curryPanel.Visible = true;
             curryPanel.Location = new Point(100, 6);
-            MakeButtonsVisible();
         }
 
         private void riceButton_Click(object sender, EventArgs e)
@@ -160,25 +157,28 @@ namespace regal_spice
             clearPanels();
             ricebreadPanel.Visible = true;
             ricebreadPanel.Location = new Point(100, 6);
-            MakeButtonsVisible();
 
         }
 
-        
+        private void updateTotal()
+        {
+            Program.total = Program.total + sumTot;
+            Properties.Settings.Default.totalRev = Program.total;
+            Properties.Settings.Default.Save();
+
+        }
 
         private void dessertButton_Click(object sender, EventArgs e)
         {
             clearPanels();
             dessertdrinkPanel.Visible = true;
             dessertdrinkPanel.Location = new Point(100, 6);
-            MakeButtonsVisible();
         }
         private void sidesButton_Click(object sender, EventArgs e)
         {
             clearPanels();
             sidesPanel.Visible = true;
             sidesPanel.Location = new Point(100, 6);
-            MakeButtonsVisible();
 
         }
 
@@ -187,21 +187,6 @@ namespace regal_spice
 
 
 
-        //makes the checkboxes visible in each panel
-        private void MakeButtonsVisible()
-        {
-            foreach (var panel in menuCategories)
-            {
-                foreach (Control control in panel.Controls)
-                {
-                    if (control is Button button)
-                    {
-                        button.Visible = true;
-                        button.BackColor = Color.FloralWhite;
-                    }
-                }
-            }
-        }
 
 
 
@@ -216,21 +201,8 @@ namespace regal_spice
                 richTextBox1.Clear();
             }
 
-            foreach (Dish dish in orderedItems)
+            foreach (Dish dish in Program.orderedItems)
             {
-                //for (int i = 0; i < orderedItems.Count; i++)
-                //{
-                //    if (i == 0)
-                //    {
-                //        richTextBox1.AppendText(dish.name + dish.price.ToString());
-                //    }
-
-                //    else
-                //    {
-                //        richTextBox1.AppendText(Environment.NewLine + dish.name + dish.price.ToString());
-                //    }
-
-                //}
                 richTextBox1.AppendText(Environment.NewLine + dish.name + dish.price.ToString());
             }
         }
@@ -239,7 +211,7 @@ namespace regal_spice
         //gives change based on a $50 cash input <-- makes it easier for the waiter to provide change to notes
         private void fiftyChange_Click(object sender, EventArgs e)
         {
-            var subtract = orderedItems.Sum(item => item.price);
+            var subtract = Program.orderedItems.Sum(item => item.price);
             var result = 50 - subtract;
 
             if (result < 0)
@@ -248,7 +220,9 @@ namespace regal_spice
             }
             richTextBox2.Clear();
             richTextBox2.AppendText(result.ToString());
+            DialogResult = MessageBox.Show("Order Successfully Processed!");
             endofOrder();
+            updateTotal();
 
 
 
@@ -257,7 +231,7 @@ namespace regal_spice
 
         private void twentyChange_Click(object sender, EventArgs e)
         {
-            var subtract = orderedItems.Sum(item => item.price);
+            var subtract = Program.orderedItems.Sum(item => item.price);
             var result = 20 - subtract;
             if (result < 0)
             {
@@ -265,28 +239,40 @@ namespace regal_spice
             }
             richTextBox2.Clear();
             richTextBox2.AppendText(result.ToString());
+            DialogResult = MessageBox.Show("Order Successfully Processed!");
             endofOrder();
+            updateTotal();
 
         }
 
         private void fiveChange_Click(object sender, EventArgs e)
         {
-            var subtract = orderedItems.Sum(item => item.price);
+            var subtract = Program.orderedItems.Sum(item => item.price);
             var result = 5 - subtract;
+            if (result < 0)
+            {
+                DialogResult x = MessageBox.Show("Invalid Value - Please enter an amount larger than the total price");
+            }
             richTextBox2.Clear();
             richTextBox2.AppendText(result.ToString());
+            DialogResult = MessageBox.Show("Order Successfully Processed!");
             endofOrder();
-
+            updateTotal();
         }
 
         private void tenChange_Click(object sender, EventArgs e)
         {
-            var subtract = orderedItems.Sum(item => item.price);
+            var subtract = Program.orderedItems.Sum(item => item.price);
             var result = 10 - subtract;
+            if (result < 0)
+            {
+                DialogResult x = MessageBox.Show("Invalid Value - Please enter an amount larger than the total price");
+            }
             richTextBox2.Clear();
             richTextBox2.AppendText(result.ToString());
+            DialogResult = MessageBox.Show("Order Successfully Processed!");
             endofOrder();
-
+            updateTotal();
         }
 
         //
@@ -296,7 +282,7 @@ namespace regal_spice
             if (myButton == sender)
             {
                 var menuItem = findItem(myButton.Text);
-                orderedItems.Add(menuItem);
+                Program.orderedItems.Add(menuItem);
                 refreshTextbox();
                 sumTotal();
 
@@ -307,6 +293,7 @@ namespace regal_spice
         
         private void insertCash_Click(object sender, EventArgs e)
         {
+            richTextBox2.Clear();
             Button button = (Button)sender;
             string number = button.Text;
             y = y + number;
@@ -317,7 +304,7 @@ namespace regal_spice
         //finds the total price of all the selected items
         private void sumTotal()
         {
-            sumTot = orderedItems.Sum(item => item.price);
+            sumTot = Program.orderedItems.Sum(item => item.price);
             richTextBox2.Clear();
             richTextBox2.AppendText(sumTot.ToString());
             
@@ -333,7 +320,7 @@ namespace regal_spice
 
             if (stringNum == -1)
             {
-                DialogResult = MessageBox.Show("lol try again");
+                DialogResult = MessageBox.Show("try again");
                 richTextBox2.Clear();
                 richTextBox2.Text = sumTot.ToString();
             }
@@ -350,9 +337,7 @@ namespace regal_spice
             DialogResult = MessageBox.Show("Order Successfully Processed!");
 
             endofOrder();
-            //Program.total += sumTot;
-            Properties.Settings.Default.Save();
-       
+            updateTotal();
         } 
 
         private decimal convStringToDec(string inString)
@@ -376,9 +361,10 @@ namespace regal_spice
         {
             richTextBox1.Clear();
             richTextBox2.Clear();
-            orderedItems.Clear();
+            Program.orderedItems.Clear();
             comments.Clear();
             myOrderCounter();
+            Program.orderTime = DateTime.Now;
 
 
         }
@@ -412,7 +398,7 @@ namespace regal_spice
             try
             {
                 
-                orderedItems.RemoveAt(line-1);
+                Program.orderedItems.RemoveAt(line-1);
                 refreshTextbox();
                 sumTotal();
                 
@@ -464,7 +450,7 @@ namespace regal_spice
 
         private void hundredChange_Click(object sender, EventArgs e)
         {
-            var subtract = orderedItems.Sum(item => item.price);
+            var subtract = Program.orderedItems.Sum(item => item.price);
             var result = 100 - subtract;
 
             if (result < 0)
@@ -472,8 +458,29 @@ namespace regal_spice
                 DialogResult x = MessageBox.Show("Invalid Value - Please enter an amount larger than the total price");
             }
             richTextBox2.Clear();
+
             richTextBox2.AppendText(result.ToString());
+            MessageBox.Show("Order successfully processed!");
             endofOrder();
+            updateTotal();
+
+        }
+
+        private void actualEftpos_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Please connect to EFTPOS machine before using this.");
+
+            //code to be implemented after connection to EFTPOS machine
+            MessageBox.Show("Order successfully processed!");
+            endofOrder();
+            updateTotal();
+        }
+
+        private void button47_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form5 form5 = new Form5();
+            form5.Show();
 
         }
     }

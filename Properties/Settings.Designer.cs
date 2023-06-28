@@ -46,5 +46,17 @@ namespace regal_spice.Properties {
                 this["totalRev"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("password")]
+        public string currentPassword {
+            get {
+                return ((string)(this["currentPassword"]));
+            }
+            set {
+                this["currentPassword"] = value;
+            }
+        }
     }
 }

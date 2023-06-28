@@ -10,31 +10,25 @@ using System.Windows.Forms;
 
 namespace regal_spice
 {
-    public partial class Revenue : Form
+    public partial class Settings : Form
     {
-        public Revenue()
+        public Settings()
         {
             InitializeComponent();
-            
         }
 
-        private void Revenue_Load(object sender, EventArgs e)
+        private void changePass_Click(object sender, EventArgs e)
         {
-            label2.Text = Properties.Settings.Default.totalRev.ToString();
+            this.Hide();
+            Passwords passwords = new Passwords();
+            passwords.Show();
         }
 
-        private void toolStripButton2_Click(object sender, EventArgs e)
+        private void toolStripLabel1_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form3 form3 = new Form3();
             form3.Show();
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
-

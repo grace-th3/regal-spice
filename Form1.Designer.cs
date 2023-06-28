@@ -103,6 +103,7 @@ namespace regal_spice
             this.insertComment = new System.Windows.Forms.RichTextBox();
             this.enterComment = new System.Windows.Forms.Button();
             this.commentBox = new System.Windows.Forms.RichTextBox();
+            this.button47 = new System.Windows.Forms.Button();
             this.ricebreadPanel.SuspendLayout();
             this.entreePanel.SuspendLayout();
             this.curryPanel.SuspendLayout();
@@ -757,6 +758,7 @@ namespace regal_spice
             this.actualEftpos.TabIndex = 49;
             this.actualEftpos.Text = "EFTPOS";
             this.actualEftpos.UseVisualStyleBackColor = false;
+            this.actualEftpos.Click += new System.EventHandler(this.actualEftpos_Click);
             // 
             // actualCas
             // 
@@ -974,6 +976,16 @@ namespace regal_spice
             this.commentBox.TabIndex = 69;
             this.commentBox.Text = "";
             // 
+            // button47
+            // 
+            this.button47.Location = new System.Drawing.Point(619, 68);
+            this.button47.Name = "button47";
+            this.button47.Size = new System.Drawing.Size(124, 65);
+            this.button47.TabIndex = 70;
+            this.button47.Text = "Receipt";
+            this.button47.UseVisualStyleBackColor = true;
+            this.button47.Click += new System.EventHandler(this.button47_Click);
+            // 
             // orderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -981,6 +993,7 @@ namespace regal_spice
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1033, 481);
+            this.Controls.Add(this.button47);
             this.Controls.Add(this.commentBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button46);
@@ -1100,6 +1113,7 @@ namespace regal_spice
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button48;
+        private System.Windows.Forms.Button button47;
     }
 }
 
