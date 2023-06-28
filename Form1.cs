@@ -23,10 +23,15 @@ namespace regal_spice
         List<Dish> menu = new List<Dish>();
 
         List<string> comments = new List<string>();
-        private int orderNumber = 1;
+
+
+        public decimal amountTotal = Program.total = Properties.Settings.Default.totalRev;
         
+       
 
+        decimal sumTot = 0;
 
+        decimal stringNum = 0;
 
 
         public orderForm()
@@ -37,15 +42,18 @@ namespace regal_spice
             clearPanels();
             entreePanel.Visible = true;
             entreePanel.Location = new Point(100, 6);
-            Properties.Settings.Default.myOrderCounter = orderNumber++;
         }
 
-        private void labelText()
+        private void myOrderCounter()
         {
-            Properties.Settings.Default.myOrderCounter = orderNumber++;
-            label1.Text = "Order " + orderNumber.ToString();
+            Properties.Settings.Default.myOrderCounter++;
+            Properties.Settings.Default.Save();
+            label1.Text = ("Order " + Properties.Settings.Default.myOrderCounter);
         }
+
+ 
         
+       
         
         //populates the list of table layout panels with existing panels
         private void populatemenuCategories()
@@ -193,6 +201,7 @@ namespace regal_spice
                     if (control is Button button)
                     {
                         button.Visible = true;
+                        button.BackColor = Color.FloralWhite;
                     }
                 }
             }
@@ -230,14 +239,6 @@ namespace regal_spice
             }
         }
 
-        //finds the total price of all the selected items
-        private void sumTotal()
-        {
-            var sum = orderedItems.Sum(item => item.price);
-            richTextBox2.Clear();
-            richTextBox2.AppendText(sum.ToString());
-        }
-
 
         //gives change based on a $50 cash input <-- makes it easier for the waiter to provide change to notes
         private void fiftyChange_Click(object sender, EventArgs e)
@@ -251,7 +252,8 @@ namespace regal_spice
             }
             richTextBox2.Clear();
             richTextBox2.AppendText(result.ToString());
-            
+            endofOrder();
+
 
 
         }
@@ -261,8 +263,13 @@ namespace regal_spice
         {
             var subtract = orderedItems.Sum(item => item.price);
             var result = 20 - subtract;
+            if (result < 0)
+            {
+                DialogResult x = MessageBox.Show("Invalid Value - Please enter an amount larger than the total price");
+            }
             richTextBox2.Clear();
             richTextBox2.AppendText(result.ToString());
+            endofOrder();
 
         }
 
@@ -272,6 +279,7 @@ namespace regal_spice
             var result = 5 - subtract;
             richTextBox2.Clear();
             richTextBox2.AppendText(result.ToString());
+            endofOrder();
 
         }
 
@@ -281,6 +289,7 @@ namespace regal_spice
             var result = 10 - subtract;
             richTextBox2.Clear();
             richTextBox2.AppendText(result.ToString());
+            endofOrder();
 
         }
 
@@ -298,27 +307,83 @@ namespace regal_spice
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        string y = "";
+        
+        private void insertCash_Click(object sender, EventArgs e)
         {
+            Button button = (Button)sender;
+            string number = button.Text;
+            y = y + number;
             richTextBox2.Clear();
-            richTextBox2.AppendText("1");
+            richTextBox2.AppendText(y);
         }
+
+        //finds the total price of all the selected items
+        private void sumTotal()
+        {
+            sumTot = orderedItems.Sum(item => item.price);
+            richTextBox2.Clear();
+            richTextBox2.AppendText(sumTot.ToString());
+            
+        }
+
+
+
+        
+
+        private void cash_Click(object sender, EventArgs e)
+        {
+            stringNum = convStringToDec(y);
+
+            if (stringNum == -1)
+            {
+                DialogResult = MessageBox.Show("lol try again");
+                richTextBox2.Clear();
+                richTextBox2.Text = sumTot.ToString();
+            }
+            richTextBox2.Clear();
+            if (stringNum < sumTot)
+            {
+                DialogResult = MessageBox.Show("Invalid amount entered. The paid amount must be larger or equal to the total.");
+
+            }
+            else
+            {
+                richTextBox2.AppendText((sumTot - stringNum).ToString());
+            }
+            DialogResult = MessageBox.Show("Order Successfully Processed!");
+
+            endofOrder();
+            amountTotal = amountTotal + sumTot;
+            Program.total += sumTot;
+        } 
+
+        private decimal convStringToDec(string inString)
+        {
+            
+            try
+            {
+                
+                return decimal.Parse(inString);
+            }
+            catch
+            {
+                return -1;
+            }
+        }
+        
 
         //my current issue is that i need this to be displayed as $12 and also the entree panel isnt showing for some reason
-        private void button10_Click(object sender, EventArgs e)
-        {
-   
-            richTextBox2.Clear(); 
-            richTextBox2.AppendText("2");
-        }
 
-        private void reset_Click(object sender, EventArgs e)
+        private void endofOrder()
         {
             richTextBox1.Clear();
             richTextBox2.Clear();
             orderedItems.Clear();
             comments.Clear();
-            labelText();
+            myOrderCounter();
+
+
         }
 
         private void commentButton_Click(object sender, EventArgs e)
@@ -332,24 +397,33 @@ namespace regal_spice
 
         }
 
+
+        //issue with clearing the specific line
         private void richTextBox1_SelectionChanged(object sender, EventArgs e)
         {
             int index = richTextBox1.SelectionStart;
             int line = richTextBox1.GetLineFromCharIndex(index);
-            Console.WriteLine("Current pos is" + line);
+            
         }
 
-        //private void clear_Click(object sender, EventArgs e)
-        //{
-        //    if (clear == sender)
-        //    {
-
-        //    }
-        //}
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        private void actualClear_Click(object sender, EventArgs e)
         {
+            int index = richTextBox1.SelectionStart;
+            int line = richTextBox1.GetLineFromCharIndex(index);
+          
+           
+            try
+            {
+                
+                orderedItems.RemoveAt(line-1);
+                refreshTextbox();
+                sumTotal();
+                
+            }
+            catch
+            {
 
+            }
         }
 
         private void button46_Click(object sender, EventArgs e)
@@ -372,7 +446,7 @@ namespace regal_spice
         {
             string userInput = insertComment.Text;
 
-            // Check if the appending contents have been cleared
+            // check if the content is clear
             if (string.IsNullOrEmpty(userInput) && !string.IsNullOrEmpty(appendingContents))
             {
                 // Clear the TextBox contents
@@ -381,11 +455,30 @@ namespace regal_spice
             }
             else
             {
-                // Update the appending contents
+                // refresh
                 appendingContents = userInput;
             }
         }
 
+        private void orderForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hundredChange_Click(object sender, EventArgs e)
+        {
+            var subtract = orderedItems.Sum(item => item.price);
+            var result = 100 - subtract;
+
+            if (result < 0)
+            {
+                DialogResult x = MessageBox.Show("Invalid Value - Please enter an amount larger than the total price");
+            }
+            richTextBox2.Clear();
+            richTextBox2.AppendText(result.ToString());
+            endofOrder();
+
+        }
     }
 
 

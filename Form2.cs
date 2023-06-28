@@ -34,7 +34,13 @@ namespace regal_spice
             {
                 //attempts++;
                 label1.Visible = true;
+                label1.Location = new Point(373, 460);
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

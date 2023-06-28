@@ -23,5 +23,24 @@ namespace regal_spice
             orderForm form1 = new orderForm();
             form1.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form4 form4 = new Form4();
+            form4.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Revenue revenue = new Revenue();
+            revenue.Show();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

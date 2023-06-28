@@ -34,5 +34,17 @@ namespace regal_spice.Properties {
                 this["myOrderCounter"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal totalRev {
+            get {
+                return ((decimal)(this["totalRev"]));
+            }
+            set {
+                this["totalRev"] = value;
+            }
+        }
     }
 }

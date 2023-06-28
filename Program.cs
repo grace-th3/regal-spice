@@ -10,10 +10,13 @@ namespace regal_spice
     {
         /// <summary>
         /// The main entry point for the application.
+        public static decimal total = 0;
+        
         /// </summary>
         [STAThread]
         static void Main()
         {
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new startupForm());
