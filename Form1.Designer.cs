@@ -995,6 +995,7 @@ namespace regal_spice
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1033, 481);
+            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.button47);
             this.Controls.Add(this.commentBox);
             this.Controls.Add(this.label1);
@@ -1004,7 +1005,6 @@ namespace regal_spice
             this.Controls.Add(this.fiftyChange);
             this.Controls.Add(this.commentButt);
             this.Controls.Add(this.twentyChange);
-            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.tenChange);
             this.Controls.Add(this.fiveChange);
             this.Controls.Add(this.actualClear);

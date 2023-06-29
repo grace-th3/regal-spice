@@ -26,10 +26,23 @@ namespace regal_spice
             foreach (Dish dish in Program.orderedItems)
             {
                 listView1.Items.Add(Environment.NewLine + Environment.NewLine + dish.name + "   " + dish.price.ToString());
-                
-                listView1.Items.Add(Program.comments);
             }
 
+            commentReceipt.Text = ("Comment:" + "" + Program.comments);
+            
+
+            //bool checkEmpty = string.IsNullOrEmpty(Program.comments);
+            //if (checkEmpty == true)
+            //{
+            //    commentReceipt.Hide();
+            //}
+
+            //else
+            //{
+            //    commentReceipt.Text = ("Comment:" + Program.comments);
+            //}
+
+            
             dateandtime.Text = Program.orderTime.ToString();
             
             totalPaid.Text = ("Total paid:" + " " + "$" + Program.stringNum.ToString());

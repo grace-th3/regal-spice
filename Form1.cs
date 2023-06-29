@@ -290,7 +290,7 @@ namespace regal_spice
         
         private void insertCash_Click(object sender, EventArgs e)
         {
-            richTextBox2.Clear();
+            
             Button button = (Button)sender;
             string number = button.Text;
             addtoTotal = addtoTotal + number;
@@ -370,6 +370,7 @@ namespace regal_spice
             Program.orderedItems.Clear();
             Program.comments = "";
             myOrderCounter();
+            addtoTotal = "";
 
 
 
@@ -388,33 +389,25 @@ namespace regal_spice
         }
 
 
-        //issue with clearing the specific line
+        //controls the selection of a line in richTextBox1
         private void richTextBox1_SelectionChanged(object sender, EventArgs e)
         {
             int index = richTextBox1.SelectionStart;
             int line = richTextBox1.GetLineFromCharIndex(index);
-            
+
         }
 
+        //clears the specific line based on index
         private void actualClear_Click(object sender, EventArgs e)
         {
             int index = richTextBox1.SelectionStart;
             int line = richTextBox1.GetLineFromCharIndex(index);
-          
-           
-            try
-            {
-                
-                Program.orderedItems.RemoveAt(line-1);
-                refreshTextbox();
-                sumTotal();
-                
-            }
-            catch
-            {
+            Program.orderedItems.RemoveAt(line - 1);
+            refreshTextbox();
+            sumTotal();
 
-            }
         }
+
 
         private void button46_Click(object sender, EventArgs e)
         {
@@ -423,13 +416,16 @@ namespace regal_spice
             form3.Show();
         }
 
+        // allows the employee to enter any specifications that the customer has for their food e.g. allergies
         private void enterComment_Click(object sender, EventArgs e)
         {
-            Program.comments = commentBox.Text;
+            Program.comments = insertComment.Text;
             commentBox.AppendText(Environment.NewLine + "'" +insertComment.Text + "'");
             insertComment.Visible = false;
             enterComment.Visible = false;
         }
+
+
         private string appendingContents = "";
         private void insertComment_TextChanged(object sender, EventArgs e)
         {
