@@ -115,7 +115,7 @@ namespace regal_spice
             // entreeButton
             // 
             this.entreeButton.BackColor = System.Drawing.Color.Chocolate;
-            this.entreeButton.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entreeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.entreeButton.Location = new System.Drawing.Point(0, -2);
             this.entreeButton.Name = "entreeButton";
             this.entreeButton.Size = new System.Drawing.Size(145, 94);
@@ -127,7 +127,7 @@ namespace regal_spice
             // curryButton
             // 
             this.curryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(136)))), ((int)(((byte)(73)))));
-            this.curryButton.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.curryButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.curryButton.Location = new System.Drawing.Point(0, 90);
             this.curryButton.Name = "curryButton";
             this.curryButton.Size = new System.Drawing.Size(145, 101);
@@ -139,7 +139,7 @@ namespace regal_spice
             // riceButton
             // 
             this.riceButton.BackColor = System.Drawing.Color.SandyBrown;
-            this.riceButton.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.riceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.riceButton.Location = new System.Drawing.Point(0, 187);
             this.riceButton.Name = "riceButton";
             this.riceButton.Size = new System.Drawing.Size(145, 99);
@@ -151,7 +151,7 @@ namespace regal_spice
             // dessertButton
             // 
             this.dessertButton.BackColor = System.Drawing.Color.NavajoWhite;
-            this.dessertButton.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dessertButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dessertButton.Location = new System.Drawing.Point(0, 282);
             this.dessertButton.Name = "dessertButton";
             this.dessertButton.Size = new System.Drawing.Size(145, 99);
@@ -163,7 +163,7 @@ namespace regal_spice
             // sidesButton
             // 
             this.sidesButton.BackColor = System.Drawing.Color.PapayaWhip;
-            this.sidesButton.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidesButton.Location = new System.Drawing.Point(0, 376);
             this.sidesButton.Name = "sidesButton";
             this.sidesButton.Size = new System.Drawing.Size(145, 105);
@@ -199,12 +199,13 @@ namespace regal_spice
             // 
             // button36
             // 
+            this.button36.BackColor = System.Drawing.Color.SandyBrown;
             this.button36.Location = new System.Drawing.Point(202, 367);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(179, 110);
             this.button36.TabIndex = 49;
             this.button36.Text = "Masala Dosa";
-            this.button36.UseVisualStyleBackColor = true;
+            this.button36.UseVisualStyleBackColor = false;
             this.button36.Click += new System.EventHandler(this.button_Click);
             // 
             // button35
@@ -978,12 +979,13 @@ namespace regal_spice
             // 
             // button47
             // 
+            this.button47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(136)))), ((int)(((byte)(73)))));
             this.button47.Location = new System.Drawing.Point(619, 68);
             this.button47.Name = "button47";
             this.button47.Size = new System.Drawing.Size(124, 65);
             this.button47.TabIndex = 70;
             this.button47.Text = "Receipt";
-            this.button47.UseVisualStyleBackColor = true;
+            this.button47.UseVisualStyleBackColor = false;
             this.button47.Click += new System.EventHandler(this.button47_Click);
             // 
             // orderForm

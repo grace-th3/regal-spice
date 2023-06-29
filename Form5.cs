@@ -15,17 +15,31 @@ namespace regal_spice
         public Form5()
         {
             InitializeComponent();
+            populateReceipt();
         }
 
         private void populateReceipt()
         {
-            label1.Text = Program.orderNum;
+           
+            orderNumber.Text = Program.orderNum;
+
+            foreach (Dish dish in Program.orderedItems)
+            {
+                listView1.Items.Add(Environment.NewLine + Environment.NewLine + dish.name + "   " + dish.price.ToString());
+                
+                listView1.Items.Add(Program.comments);
+            }
+
+            dateandtime.Text = Program.orderTime.ToString();
+            
+            totalPaid.Text = ("Total paid:" + " " + "$" + Program.stringNum.ToString());
+
+            sumTotal.Text = ("Total due:" + " " + "$" + Program.sumTot.ToString());
+            changeDue.Text = ("Total change:" + " " + "$" + Program.changeReq.ToString());
+
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -37,6 +51,33 @@ namespace regal_spice
             this.Hide();
             orderForm form1 = new orderForm();
             form1.Show();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Printer unavailable. Please connect printer first.");
+        }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form3 form3 = new Form3();
+            form3.Show();
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

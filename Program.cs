@@ -13,8 +13,13 @@ namespace regal_spice
         /// The main entry point for the application.
         public static decimal total = 0;
         public static DateTime orderTime;
+        public static string comments;
         public static List<Dish> orderedItems = new List<Dish>();
         public static string orderNum;
+        public static decimal stringNum = 0;
+        public static decimal sumTot = 0;
+        public static decimal changeReq = 0;
+
         static Program()
         {
             Program.total = Properties.Settings.Default.totalRev;

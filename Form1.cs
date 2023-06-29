@@ -19,13 +19,8 @@ namespace regal_spice
         //a list that populates the Dish.cs class
         List<Dish> menu = new List<Dish>();
 
-        List<string> comments = new List<string>();
-
         //public decimal amountTotal;
         
-        decimal sumTot = 0;
-
-        decimal stringNum = 0;
 
 
 
@@ -37,6 +32,7 @@ namespace regal_spice
             clearPanels();
             entreePanel.Visible = true;
             entreePanel.Location = new Point(100, 6);
+            myOrderCounter();
         }
 
         private void myOrderCounter()
@@ -162,7 +158,7 @@ namespace regal_spice
 
         private void updateTotal()
         {
-            Program.total = Program.total + sumTot;
+            Program.total = Program.total + Program.sumTot;
             Properties.Settings.Default.totalRev = Program.total;
             Properties.Settings.Default.Save();
 
@@ -203,7 +199,8 @@ namespace regal_spice
 
             foreach (Dish dish in Program.orderedItems)
             {
-                richTextBox1.AppendText(Environment.NewLine + dish.name + dish.price.ToString());
+                richTextBox1.AppendText(Environment.NewLine + Environment.NewLine + " " + dish.name + dish.price.ToString());
+
             }
         }
 
@@ -289,57 +286,64 @@ namespace regal_spice
             }
         }
 
-        string y = "";
+        string addtoTotal = "";
         
         private void insertCash_Click(object sender, EventArgs e)
         {
             richTextBox2.Clear();
             Button button = (Button)sender;
             string number = button.Text;
-            y = y + number;
+            addtoTotal = addtoTotal + number;
             richTextBox2.Clear();
-            richTextBox2.AppendText(y);
+            richTextBox2.AppendText(addtoTotal);
         }
 
         //finds the total price of all the selected items
         private void sumTotal()
         {
-            sumTot = Program.orderedItems.Sum(item => item.price);
+            Program.sumTot = Program.orderedItems.Sum(item => item.price);
             richTextBox2.Clear();
-            richTextBox2.AppendText(sumTot.ToString());
+            richTextBox2.AppendText(Program.sumTot.ToString());
             
         }
 
 
 
         
-
+        //paying with cash
         private void cash_Click(object sender, EventArgs e)
         {
-            stringNum = convStringToDec(y);
+            Program.changeReq = Program.stringNum - Program.sumTot;
+            Program.stringNum = convStringToDec(addtoTotal);
 
-            if (stringNum == -1)
+            if (Program.stringNum == -1)
             {
-                DialogResult = MessageBox.Show("try again");
                 richTextBox2.Clear();
-                richTextBox2.Text = sumTot.ToString();
-            }
-            richTextBox2.Clear();
-            if (stringNum < sumTot)
-            {
-                DialogResult = MessageBox.Show("Invalid amount entered. The paid amount must be larger or equal to the total.");
-
+                richTextBox2.Text = Program.sumTot.ToString();
             }
             else
             {
-                richTextBox2.AppendText((sumTot - stringNum).ToString());
-            }
-            DialogResult = MessageBox.Show("Order Successfully Processed!");
+                richTextBox2.Clear();
+                if (Program.stringNum < Program.sumTot)
+                {
+                    DialogResult = MessageBox.Show("Invalid amount entered. The paid amount must be larger or equal to the total.");
 
-            endofOrder();
-            updateTotal();
+                }
+                else
+                {
+                    richTextBox2.AppendText((Program.stringNum-Program.sumTot).ToString());
+                    Program.changeReq = Program.stringNum - Program.sumTot;
+                    DialogResult = MessageBox.Show("Order Successfully Processed!");
+
+                    endofOrder();
+                    updateTotal();
+                }
+            }
+
+
         } 
 
+        //converts the string to decimal, returns a catch in case of invalid values
         private decimal convStringToDec(string inString)
         {
             
@@ -355,16 +359,19 @@ namespace regal_spice
         }
         
 
-        //my current issue is that i need this to be displayed as $12 and also the entree panel isnt showing for some reason
-
+        //method that describes what occurs at the end of the order
         private void endofOrder()
         {
+            Program.orderTime = DateTime.Now;
+            Form5 form5 = new Form5();
+            form5.Show();
             richTextBox1.Clear();
             richTextBox2.Clear();
             Program.orderedItems.Clear();
-            comments.Clear();
+            Program.comments = "";
             myOrderCounter();
-            Program.orderTime = DateTime.Now;
+
+
 
 
         }
@@ -418,8 +425,7 @@ namespace regal_spice
 
         private void enterComment_Click(object sender, EventArgs e)
         {
-            string commentInput = commentBox.Text;
-            comments.Add(commentInput);
+            Program.comments = commentBox.Text;
             commentBox.AppendText(Environment.NewLine + "'" +insertComment.Text + "'");
             insertComment.Visible = false;
             enterComment.Visible = false;
@@ -471,9 +477,9 @@ namespace regal_spice
             MessageBox.Show("Please connect to EFTPOS machine before using this.");
 
             //code to be implemented after connection to EFTPOS machine
-            MessageBox.Show("Order successfully processed!");
-            endofOrder();
-            updateTotal();
+            //MessageBox.Show("Order successfully processed!");
+            //endofOrder();
+            //updateTotal();
         }
 
         private void button47_Click(object sender, EventArgs e)
