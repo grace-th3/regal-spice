@@ -31,7 +31,7 @@ namespace regal_spice
             populateMenu();
             clearPanels();
             entreePanel.Visible = true;
-            entreePanel.Location = new Point(98, 4);
+            entreePanel.Location = new Point(100,26);
             myOrderCounter();
         }
         //entree panel is placed for the startup view and initial location of entree panel
@@ -78,7 +78,7 @@ namespace regal_spice
             menu.Add(new Dish("Pappadum (2)", (decimal)1.10));
             menu.Add(new Dish("Cucumber Raita", (decimal)3.75));
             menu.Add(new Dish("Lime Pickle", (decimal)2.99));
-            menu.Add(new Dish("Mango Pickle", (decimal)2.99));
+            menu.Add(new Dish("Regal Chutney", (decimal)2.99));
             menu.Add(new Dish("Fresh Herbs", (decimal)0.00));
             //entrees
             menu.Add(new Dish("Veg Samosa", (decimal) 7.50));
@@ -97,12 +97,11 @@ namespace regal_spice
             menu.Add(new Dish("Goat Curry", (decimal)16.70));
             menu.Add(new Dish("Chicken Tikka Masala", (decimal)15.70));
             menu.Add(new Dish("Kerala Prawn Curry", (decimal)19.50));
-            menu.Add(new Dish("Dal Makhni", (decimal)14.90));
-            menu.Add(new Dish("Kadai Paneer", (decimal)14.90));
+
             //rices and breads
             menu.Add(new Dish("Chicken Biriyani", (decimal)17.50));
             menu.Add(new Dish("Basmati Rice (1 serve)", (decimal)4.70));
-            menu.Add(new Dish("Garlic Naan", (decimal)7.50));
+            menu.Add(new Dish("Plain Naan", (decimal)7.50));
             menu.Add(new Dish("Dosa (1 piece)", (decimal)5.40));
             menu.Add(new Dish("Roti (1 piece)", (decimal)4.70));
             menu.Add(new Dish("Poori (1 piece)", (decimal)6.49));
@@ -138,7 +137,7 @@ namespace regal_spice
         {
             clearPanels();
             entreePanel.Visible = true;
-            entreePanel.Location = new Point(10, 6);
+            entreePanel.Location = new Point(100, 26);
 
         }
 
@@ -147,14 +146,14 @@ namespace regal_spice
         {
             clearPanels();
             curryPanel.Visible = true;
-            curryPanel.Location = new Point(100, 6);
+            curryPanel.Location = new Point(100, 26);
         }
 
         private void riceButton_Click(object sender, EventArgs e)
         {
             clearPanels();
             ricebreadPanel.Visible = true;
-            ricebreadPanel.Location = new Point(100, 6);
+            ricebreadPanel.Location = new Point(100, 26);
 
         }
 
@@ -170,13 +169,13 @@ namespace regal_spice
         {
             clearPanels();
             dessertdrinkPanel.Visible = true;
-            dessertdrinkPanel.Location = new Point(100, 6);
+            dessertdrinkPanel.Location = new Point(100, 26);
         }
         private void sidesButton_Click(object sender, EventArgs e)
         {
             clearPanels();
             sidesPanel.Visible = true;
-            sidesPanel.Location = new Point(100, 6);
+            sidesPanel.Location = new Point(100, 26);
 
         }
 
@@ -199,53 +198,80 @@ namespace regal_spice
         //gives change based on a $50 cash input <-- makes it easier for the waiter to provide change to notes
         private void fiftyChange_Click(object sender, EventArgs e)
         {
+
             var subtract = Program.orderedItems.Sum(item => item.price);
             var result = 50 - subtract;
 
             if (result < 0)
             {
-                DialogResult x  = MessageBox.Show("Invalid Value - Please enter an amount larger than the total price");
+                MessageBox.Show("Invalid Value - Please enter an amount larger than the total price");
+                richTextBox2.Text = (Program.sumTot.ToString());
             }
-            richTextBox2.Clear();
-            richTextBox2.AppendText(result.ToString());
-            DialogResult = MessageBox.Show("Order Successfully Processed!");
-            endofOrder();
-            updateTotal();
+            else
+            {
+                Program.stringNum = 50;
+                Program.changeReq = 50 - Program.sumTot;
+                richTextBox2.Clear();
+                richTextBox2.AppendText(result.ToString());
+                DialogResult = MessageBox.Show("Order Successfully Processed!");
+                endofOrder();
+                updateTotal();
+            }
+
 
 
 
         }
 
-
+        //twenty dollar change
         private void twentyChange_Click(object sender, EventArgs e)
         {
             var subtract = Program.orderedItems.Sum(item => item.price);
             var result = 20 - subtract;
             if (result < 0)
             {
-                DialogResult x = MessageBox.Show("Invalid Value - Please enter an amount larger than the total price");
+                MessageBox.Show("Invalid Value - Please enter an amount larger than the total price");
+                richTextBox2.Text = (Program.sumTot.ToString());
             }
-            richTextBox2.Clear();
-            richTextBox2.AppendText(result.ToString());
-            DialogResult = MessageBox.Show("Order Successfully Processed!");
-            endofOrder();
-            updateTotal();
+
+            else
+            {
+                Program.stringNum = 20;
+                Program.changeReq = result;
+
+                richTextBox2.Clear();
+                richTextBox2.AppendText(result.ToString());
+                MessageBox.Show("Order Successfully Processed!");
+                endofOrder();
+                updateTotal();
+            }
+
 
         }
 
         private void fiveChange_Click(object sender, EventArgs e)
         {
+
             var subtract = Program.orderedItems.Sum(item => item.price);
             var result = 5 - subtract;
             if (result < 0)
             {
-                DialogResult x = MessageBox.Show("Invalid Value - Please enter an amount larger than the total price");
+                MessageBox.Show("Invalid Value - Please enter an amount larger than the total price");
+                richTextBox2.Text = (Program.sumTot.ToString());
             }
-            richTextBox2.Clear();
-            richTextBox2.AppendText(result.ToString());
-            DialogResult = MessageBox.Show("Order Successfully Processed!");
-            endofOrder();
-            updateTotal();
+            else
+            {
+                Program.stringNum = 5;
+                Program.changeReq = result;
+
+                richTextBox2.Clear();
+                richTextBox2.AppendText(result.ToString());
+                DialogResult = MessageBox.Show("Order Successfully Processed!");
+                endofOrder();
+                updateTotal();
+            }
+
+
         }
 
         private void tenChange_Click(object sender, EventArgs e)
@@ -255,12 +281,19 @@ namespace regal_spice
             if (result < 0)
             {
                 DialogResult x = MessageBox.Show("Invalid Value - Please enter an amount larger than the total price");
+                richTextBox2.Text = (Program.sumTot.ToString());
             }
-            richTextBox2.Clear();
-            richTextBox2.AppendText(result.ToString());
-            DialogResult = MessageBox.Show("Order Successfully Processed!");
-            endofOrder();
-            updateTotal();
+            else
+            {
+                Program.stringNum = 10;
+                Program.changeReq = result;
+                richTextBox2.Clear();
+                richTextBox2.AppendText(result.ToString());
+                DialogResult = MessageBox.Show("Order Successfully Processed!");
+                endofOrder();
+                updateTotal();
+            }
+
         }
 
         //
@@ -309,13 +342,15 @@ namespace regal_spice
 
             if (Program.stringNum == -1)
             {
+
                 richTextBox2.Clear();
+                DialogResult = MessageBox.Show("Invalid amount entered. Please enter a value.");
                 richTextBox2.Text = Program.sumTot.ToString();
             }
             else
             {
                 richTextBox2.Clear();
-                if (Program.stringNum < Program.sumTot)
+                if (Program.stringNum < Program.sumTot || Program.stringNum == 0)
                 {
                     DialogResult = MessageBox.Show("Invalid amount entered. The paid amount must be larger or equal to the total.");
 
@@ -354,7 +389,7 @@ namespace regal_spice
         private void endofOrder()
         {
             Program.orderTime = DateTime.Now;
-            Form5 form5 = new Form5();
+            Receipt form5 = new Receipt();
             form5.Show();
             richTextBox1.Clear();
             richTextBox2.Clear();
@@ -375,8 +410,7 @@ namespace regal_spice
             enterComment.Visible = true;
             enterComment.BringToFront();
             
-            //crete _+showtextbox
-
+ 
         }
 
 
@@ -412,7 +446,7 @@ namespace regal_spice
         private void button46_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 form3 = new Form3();
+            mainMenu form3 = new mainMenu();
             form3.Show();
         }
 
@@ -445,11 +479,8 @@ namespace regal_spice
             }
         }
 
-        private void orderForm_Load(object sender, EventArgs e)
-        {
 
-        }
-
+        //provides change to $100
         private void hundredChange_Click(object sender, EventArgs e)
         {
             var subtract = Program.orderedItems.Sum(item => item.price);
@@ -457,14 +488,20 @@ namespace regal_spice
 
             if (result < 0)
             {
-                DialogResult x = MessageBox.Show("Invalid Value - Please enter an amount larger than the total price");
+                MessageBox.Show("Invalid Value - Please enter an amount larger than the total price");
+                richTextBox2.Text = (Program.sumTot.ToString());
             }
-            richTextBox2.Clear();
 
-            richTextBox2.AppendText(result.ToString());
-            MessageBox.Show("Order successfully processed!");
-            endofOrder();
-            updateTotal();
+            else
+            {
+                Program.stringNum = 100;
+                Program.changeReq = result;
+                richTextBox2.Clear();
+                richTextBox2.AppendText(result.ToString());
+                DialogResult = MessageBox.Show("Order Successfully Processed!");
+                endofOrder();
+                updateTotal();
+            }
 
         }
 
@@ -472,28 +509,19 @@ namespace regal_spice
         {
             MessageBox.Show("Please connect to EFTPOS machine before using this.");
 
-            //code to be implemented after connection to EFTPOS machine
+            //initial basic code to be implemented after connection to EFTPOS machine
             //MessageBox.Show("Order successfully processed!");
             //endofOrder();
             //updateTotal();
+            
         }
 
-        private void button47_Click(object sender, EventArgs e)
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form5 form5 = new Form5();
-            form5.Show();
-
-        }
-
-        private void dessertdrinkPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void curryPanel_Paint(object sender, PaintEventArgs e)
-        {
-
+            mainMenu main = new mainMenu();
+            main.Show();
         }
     }
 

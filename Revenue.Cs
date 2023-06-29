@@ -18,15 +18,18 @@ namespace regal_spice
             
         }
 
+        //the actual display of revenue
         private void Revenue_Load(object sender, EventArgs e)
         {
             label2.Text = Properties.Settings.Default.totalRev.ToString();
         }
 
+
+        //back to main menu
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 form3 = new Form3();
+            mainMenu form3 = new mainMenu();
             form3.Show();
 
         }

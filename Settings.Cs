@@ -17,6 +17,7 @@ namespace regal_spice
             InitializeComponent();
         }
 
+        //to change password
         private void changePass_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -24,10 +25,11 @@ namespace regal_spice
             passwords.Show();
         }
 
+        //back to main menu
         private void toolStripLabel1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 form3 = new Form3();
+            mainMenu form3 = new mainMenu();
             form3.Show();
         }
     }

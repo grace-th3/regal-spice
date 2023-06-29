@@ -10,44 +10,43 @@ using System.Windows.Forms;
 
 namespace regal_spice
 {
-    public partial class Form3 : Form
+    public partial class mainMenu : Form
     {
-        public Form3()
+        public mainMenu()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void orderprocess_Click(object sender, EventArgs e)
         {
             this.Hide();
             orderForm form1 = new orderForm();
             form1.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form4 form4 = new Form4();
-            form4.Show();
-        }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void revenue_Click(object sender, EventArgs e)
         {
             this.Hide();
             Revenue revenue = new Revenue();
             revenue.Show();
         }
 
-        private void Form3_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button4_Click(object sender, EventArgs e)
+        //go to settings
+        private void settings_Click(object sender, EventArgs e)
         {
             this.Hide();
             Settings settings = new Settings();
             settings.Show();
+        }
+
+        //go back to startup
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            startupForm start = new startupForm();
+            start.Show();
         }
     }
 }

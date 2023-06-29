@@ -74,22 +74,22 @@ namespace regal_spice
             // 
             // toolStrip1
             // 
-            this.toolStrip1.BackColor = System.Drawing.Color.Salmon;
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(826, 30);
+            this.toolStrip1.Size = new System.Drawing.Size(826, 38);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(101, 25);
-            this.toolStripLabel1.Text = "Main Menu";
-            this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
+            this.toolStripLabel1.Size = new System.Drawing.Size(139, 33);
+            this.toolStripLabel1.Text = "Back to Settings";
+            this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click_1);
             // 
             // Passwords
             // 

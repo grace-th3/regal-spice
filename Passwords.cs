@@ -43,8 +43,8 @@ namespace regal_spice
             string newPassword = textBox2.Text;
             string confirmedPassword = textBox3.Text;
 
-            //if (correctpassword == enteredPassword)
-            //{
+            if (correctpassword == enteredPassword)
+            {
 
                 if (newPassword == confirmedPassword)
                 {
@@ -61,19 +61,20 @@ namespace regal_spice
                     textBox3.Clear();
                     MessageBox.Show("Passwords do not match.");
                 }
-            //}
-
-            //else
-            //{
-            //    MessageBox.Show("The current password is incorrect");
-            //}
         }
 
-        private void toolStripLabel1_Click(object sender, EventArgs e)
+            else
+            {
+                MessageBox.Show("the current password is incorrect");
+            }
+}
+
+
+        private void toolStripLabel1_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 form3 = new Form3();
-            form3.Show();
+            Settings settings = new Settings();
+            settings.Show();
         }
     }
 }

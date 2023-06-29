@@ -39,9 +39,9 @@ namespace regal_spice
             // changePass
             // 
             this.changePass.BackColor = System.Drawing.Color.DarkSalmon;
-            this.changePass.Location = new System.Drawing.Point(319, 200);
+            this.changePass.Location = new System.Drawing.Point(312, 249);
             this.changePass.Name = "changePass";
-            this.changePass.Size = new System.Drawing.Size(195, 52);
+            this.changePass.Size = new System.Drawing.Size(204, 62);
             this.changePass.TabIndex = 0;
             this.changePass.Text = "Change Password";
             this.changePass.UseVisualStyleBackColor = false;
@@ -55,14 +55,14 @@ namespace regal_spice
             this.toolStripLabel1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(826, 38);
+            this.toolStrip1.Size = new System.Drawing.Size(826, 30);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "Main Menu";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(101, 33);
+            this.toolStripLabel1.Size = new System.Drawing.Size(101, 25);
             this.toolStripLabel1.Text = "Main Menu";
             this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
             // 

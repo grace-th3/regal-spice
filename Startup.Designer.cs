@@ -65,7 +65,7 @@ namespace regal_spice
             this.label1.TabIndex = 2;
             this.label1.Text = "Incorrect Password";
             this.label1.Visible = false;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+           
             // 
             // startupForm
             // 
@@ -82,7 +82,6 @@ namespace regal_spice
             this.ForeColor = System.Drawing.Color.Maroon;
             this.Name = "startupForm";
             this.Text = "startupForm";
-            this.Load += new System.EventHandler(this.startupForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

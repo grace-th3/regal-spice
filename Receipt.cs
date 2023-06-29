@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace regal_spice
 {
-    public partial class Form5 : Form
+    public partial class Receipt : Form
     {
-        public Form5()
+        public Receipt()
         {
             InitializeComponent();
             populateReceipt();
@@ -29,19 +29,7 @@ namespace regal_spice
             }
 
             commentReceipt.Text = ("Comment:" + "" + Program.comments);
-            
-
-            //bool checkEmpty = string.IsNullOrEmpty(Program.comments);
-            //if (checkEmpty == true)
-            //{
-            //    commentReceipt.Hide();
-            //}
-
-            //else
-            //{
-            //    commentReceipt.Text = ("Comment:" + Program.comments);
-            //}
-
+           
             
             dateandtime.Text = Program.orderTime.ToString();
             
@@ -52,12 +40,6 @@ namespace regal_spice
 
         }
 
-       
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -74,23 +56,9 @@ namespace regal_spice
         private void toolStripLabel1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 form3 = new Form3();
+            mainMenu form3 = new mainMenu();
             form3.Show();
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
