@@ -25,7 +25,7 @@ namespace regal_spice
 
             foreach (Dish dish in Program.orderedItems)
             {
-                listView1.Items.Add(Environment.NewLine + Environment.NewLine + dish.name + "   " + dish.price.ToString());
+                listView1.Items.Add(Environment.NewLine + dish.name + "   " + dish.price.ToString());
             }
 
             commentReceipt.Text = ("Comment:" + "" + Program.comments);

@@ -82,6 +82,7 @@ namespace regal_spice
             this.ForeColor = System.Drawing.Color.Maroon;
             this.Name = "startupForm";
             this.Text = "startupForm";
+            this.Load += new System.EventHandler(this.startupForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

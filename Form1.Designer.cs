@@ -44,16 +44,14 @@ namespace regal_spice
             this.button30 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.entreePanel = new System.Windows.Forms.TableLayoutPanel();
+            this.button49 = new System.Windows.Forms.Button();
             this.button45 = new System.Windows.Forms.Button();
             this.button44 = new System.Windows.Forms.Button();
             this.button43 = new System.Windows.Forms.Button();
             this.button42 = new System.Windows.Forms.Button();
             this.button38 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button3 = new System.Windows.Forms.Button();
             this.curryPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
@@ -186,7 +184,7 @@ namespace regal_spice
             this.ricebreadPanel.Controls.Add(this.button31, 0, 1);
             this.ricebreadPanel.Controls.Add(this.button30, 1, 0);
             this.ricebreadPanel.Controls.Add(this.button29, 0, 0);
-            this.ricebreadPanel.Location = new System.Drawing.Point(115, 1);
+            this.ricebreadPanel.Location = new System.Drawing.Point(540, 126);
             this.ricebreadPanel.Name = "ricebreadPanel";
             this.ricebreadPanel.RowCount = 4;
             this.ricebreadPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.24903F));
@@ -267,7 +265,7 @@ namespace regal_spice
             // button30
             // 
             this.button30.BackColor = System.Drawing.Color.SandyBrown;
-            this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button30.Location = new System.Drawing.Point(202, 3);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(179, 110);
@@ -279,12 +277,12 @@ namespace regal_spice
             // button29
             // 
             this.button29.BackColor = System.Drawing.Color.SandyBrown;
-            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button29.Location = new System.Drawing.Point(3, 3);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(193, 110);
             this.button29.TabIndex = 42;
-            this.button29.Text = "Biryani (Chicken, Beef, Veg)";
+            this.button29.Text = "Chicken Biriyani";
             this.button29.UseVisualStyleBackColor = false;
             this.button29.Click += new System.EventHandler(this.button_Click);
             // 
@@ -295,222 +293,213 @@ namespace regal_spice
             this.entreePanel.ColumnCount = 2;
             this.entreePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.entreePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.entreePanel.Controls.Add(this.button49, 0, 3);
             this.entreePanel.Controls.Add(this.button45, 1, 2);
             this.entreePanel.Controls.Add(this.button44, 0, 2);
             this.entreePanel.Controls.Add(this.button43, 1, 1);
             this.entreePanel.Controls.Add(this.button42, 0, 1);
             this.entreePanel.Controls.Add(this.button38, 1, 0);
-            this.entreePanel.Controls.Add(this.checkBox1, 0, 3);
             this.entreePanel.Controls.Add(this.button3, 0, 0);
-            this.entreePanel.Location = new System.Drawing.Point(12, 9);
+            this.entreePanel.Location = new System.Drawing.Point(632, 24);
             this.entreePanel.Name = "entreePanel";
             this.entreePanel.RowCount = 4;
-            this.entreePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.entreePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.entreePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.entreePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.entreePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.41177F));
+            this.entreePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.58823F));
+            this.entreePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 110F));
+            this.entreePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 114F));
             this.entreePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.entreePanel.Size = new System.Drawing.Size(371, 480);
             this.entreePanel.TabIndex = 44;
             // 
+            // button49
+            // 
+            this.button49.BackColor = System.Drawing.Color.Chocolate;
+            this.button49.Location = new System.Drawing.Point(3, 368);
+            this.button49.Name = "button49";
+            this.button49.Size = new System.Drawing.Size(179, 109);
+            this.button49.TabIndex = 52;
+            this.button49.Text = "Paneer Tikka";
+            this.button49.UseVisualStyleBackColor = false;
+            // 
             // button45
             // 
-            this.button45.Location = new System.Drawing.Point(188, 331);
+            this.button45.BackColor = System.Drawing.Color.Chocolate;
+            this.button45.Location = new System.Drawing.Point(188, 258);
             this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(179, 84);
+            this.button45.Size = new System.Drawing.Size(179, 104);
             this.button45.TabIndex = 51;
             this.button45.Text = "Chilli Prawns";
-            this.button45.UseVisualStyleBackColor = true;
+            this.button45.UseVisualStyleBackColor = false;
             this.button45.Click += new System.EventHandler(this.button_Click);
             // 
             // button44
             // 
-            this.button44.Location = new System.Drawing.Point(3, 331);
+            this.button44.BackColor = System.Drawing.Color.Chocolate;
+            this.button44.Location = new System.Drawing.Point(3, 258);
             this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(179, 84);
+            this.button44.Size = new System.Drawing.Size(179, 104);
             this.button44.TabIndex = 50;
             this.button44.Text = "Lamb Cutlet";
-            this.button44.UseVisualStyleBackColor = true;
+            this.button44.UseVisualStyleBackColor = false;
             this.button44.Click += new System.EventHandler(this.button_Click);
             // 
             // button43
             // 
-            this.button43.Location = new System.Drawing.Point(188, 167);
+            this.button43.BackColor = System.Drawing.Color.Chocolate;
+            this.button43.Location = new System.Drawing.Point(188, 129);
             this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(179, 103);
+            this.button43.Size = new System.Drawing.Size(179, 123);
             this.button43.TabIndex = 49;
             this.button43.Text = "Chicken Tikka (2 pieces)";
-            this.button43.UseVisualStyleBackColor = true;
+            this.button43.UseVisualStyleBackColor = false;
             this.button43.Click += new System.EventHandler(this.button_Click);
             // 
             // button42
             // 
-            this.button42.Location = new System.Drawing.Point(3, 167);
+            this.button42.BackColor = System.Drawing.Color.Chocolate;
+            this.button42.Location = new System.Drawing.Point(3, 129);
             this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(179, 103);
+            this.button42.Size = new System.Drawing.Size(179, 123);
             this.button42.TabIndex = 48;
             this.button42.Text = "Pakora (Veg, Chicken)";
-            this.button42.UseVisualStyleBackColor = true;
+            this.button42.UseVisualStyleBackColor = false;
             this.button42.Click += new System.EventHandler(this.button_Click);
             // 
             // button38
             // 
+            this.button38.BackColor = System.Drawing.Color.Chocolate;
             this.button38.Location = new System.Drawing.Point(188, 3);
             this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(179, 103);
+            this.button38.Size = new System.Drawing.Size(179, 120);
             this.button38.TabIndex = 47;
             this.button38.Text = "Onion Bhaji (2 pieces)";
-            this.button38.UseVisualStyleBackColor = true;
+            this.button38.UseVisualStyleBackColor = false;
             this.button38.Click += new System.EventHandler(this.button_Click);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox1.Location = new System.Drawing.Point(3, 421);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(145, 56);
-            this.checkBox1.TabIndex = 36;
-            this.checkBox1.Text = "Paneer Tikka";
-            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.Visible = false;
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.Chocolate;
             this.button3.Location = new System.Drawing.Point(3, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(179, 103);
+            this.button3.Size = new System.Drawing.Size(179, 120);
             this.button3.TabIndex = 46;
             this.button3.Text = "Veg Samosa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button_Click);
             // 
             // curryPanel
             // 
             this.curryPanel.BackColor = System.Drawing.Color.Transparent;
             this.curryPanel.ColumnCount = 2;
-            this.curryPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.5F));
-            this.curryPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.5F));
-            this.curryPanel.Controls.Add(this.button28, 0, 4);
-            this.curryPanel.Controls.Add(this.button27, 1, 4);
+            this.curryPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.62657F));
+            this.curryPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.37343F));
             this.curryPanel.Controls.Add(this.button19, 0, 3);
             this.curryPanel.Controls.Add(this.button26, 1, 3);
             this.curryPanel.Controls.Add(this.button25, 1, 2);
             this.curryPanel.Controls.Add(this.button24, 0, 2);
-            this.curryPanel.Controls.Add(this.button23, 1, 1);
             this.curryPanel.Controls.Add(this.button22, 0, 1);
             this.curryPanel.Controls.Add(this.button21, 1, 0);
             this.curryPanel.Controls.Add(this.button20, 0, 0);
-            this.curryPanel.Location = new System.Drawing.Point(18, 1);
+            this.curryPanel.Controls.Add(this.button23, 1, 1);
+            this.curryPanel.Location = new System.Drawing.Point(136, 3);
             this.curryPanel.Name = "curryPanel";
             this.curryPanel.RowCount = 5;
-            this.curryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.31507F));
-            this.curryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.68493F));
-            this.curryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 103F));
-            this.curryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.curryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.curryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.79757F));
+            this.curryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.20243F));
+            this.curryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 116F));
+            this.curryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 121F));
+            this.curryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.curryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.curryPanel.Size = new System.Drawing.Size(399, 480);
             this.curryPanel.TabIndex = 43;
-            // 
-            // button28
-            // 
-            this.button28.Location = new System.Drawing.Point(3, 445);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(177, 32);
-            this.button28.TabIndex = 63;
-            this.button28.Text = "Dal Makhni";
-            this.button28.UseVisualStyleBackColor = true;
-            this.button28.Click += new System.EventHandler(this.button_Click);
-            // 
-            // button27
-            // 
-            this.button27.Location = new System.Drawing.Point(200, 445);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(177, 32);
-            this.button27.TabIndex = 62;
-            this.button27.Text = "Kadai Paneer";
-            this.button27.UseVisualStyleBackColor = true;
-            this.button27.Click += new System.EventHandler(this.button_Click);
+            this.curryPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.curryPanel_Paint);
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(3, 380);
+            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(136)))), ((int)(((byte)(73)))));
+            this.button19.Location = new System.Drawing.Point(3, 353);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(177, 59);
+            this.button19.Size = new System.Drawing.Size(196, 115);
             this.button19.TabIndex = 61;
             this.button19.Text = "Chicken Tikka Masala";
-            this.button19.UseVisualStyleBackColor = true;
+            this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.button_Click);
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(200, 380);
+            this.button26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(136)))), ((int)(((byte)(73)))));
+            this.button26.Location = new System.Drawing.Point(205, 353);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(177, 59);
+            this.button26.Size = new System.Drawing.Size(191, 115);
             this.button26.TabIndex = 60;
             this.button26.Text = "Kerala Prawn Curry";
-            this.button26.UseVisualStyleBackColor = true;
+            this.button26.UseVisualStyleBackColor = false;
             this.button26.Click += new System.EventHandler(this.button_Click);
             // 
             // button25
             // 
-            this.button25.Location = new System.Drawing.Point(200, 277);
+            this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(136)))), ((int)(((byte)(73)))));
+            this.button25.Location = new System.Drawing.Point(205, 237);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(177, 97);
+            this.button25.Size = new System.Drawing.Size(191, 110);
             this.button25.TabIndex = 59;
             this.button25.Text = "Goat Curry";
-            this.button25.UseVisualStyleBackColor = true;
+            this.button25.UseVisualStyleBackColor = false;
             this.button25.Click += new System.EventHandler(this.button_Click);
             // 
             // button24
             // 
-            this.button24.Location = new System.Drawing.Point(3, 277);
+            this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(136)))), ((int)(((byte)(73)))));
+            this.button24.Location = new System.Drawing.Point(3, 237);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(177, 97);
+            this.button24.Size = new System.Drawing.Size(196, 110);
             this.button24.TabIndex = 58;
             this.button24.Text = "Beef Vindaloo";
-            this.button24.UseVisualStyleBackColor = true;
+            this.button24.UseVisualStyleBackColor = false;
             this.button24.Click += new System.EventHandler(this.button_Click);
             // 
             // button23
             // 
-            this.button23.Location = new System.Drawing.Point(200, 138);
+            this.button23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(136)))), ((int)(((byte)(73)))));
+            this.button23.Location = new System.Drawing.Point(205, 120);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(177, 119);
+            this.button23.Size = new System.Drawing.Size(191, 109);
             this.button23.TabIndex = 57;
             this.button23.Text = "Chana Masala";
-            this.button23.UseVisualStyleBackColor = true;
+            this.button23.UseVisualStyleBackColor = false;
             this.button23.Click += new System.EventHandler(this.button_Click);
             // 
             // button22
             // 
-            this.button22.Location = new System.Drawing.Point(3, 138);
+            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(136)))), ((int)(((byte)(73)))));
+            this.button22.Location = new System.Drawing.Point(3, 120);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(177, 119);
+            this.button22.Size = new System.Drawing.Size(196, 111);
             this.button22.TabIndex = 56;
             this.button22.Text = "Beef Roganjosh";
-            this.button22.UseVisualStyleBackColor = true;
+            this.button22.UseVisualStyleBackColor = false;
             this.button22.Click += new System.EventHandler(this.button_Click);
             // 
             // button21
             // 
-            this.button21.Location = new System.Drawing.Point(200, 3);
+            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(136)))), ((int)(((byte)(73)))));
+            this.button21.Location = new System.Drawing.Point(205, 3);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(177, 119);
+            this.button21.Size = new System.Drawing.Size(191, 111);
             this.button21.TabIndex = 55;
             this.button21.Text = "Chicken Saag";
-            this.button21.UseVisualStyleBackColor = true;
+            this.button21.UseVisualStyleBackColor = false;
             this.button21.Click += new System.EventHandler(this.button_Click);
             // 
             // button20
             // 
+            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(136)))), ((int)(((byte)(73)))));
             this.button20.Location = new System.Drawing.Point(3, 3);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(177, 129);
+            this.button20.Size = new System.Drawing.Size(196, 111);
             this.button20.TabIndex = 54;
             this.button20.Text = "Butter Chicken";
-            this.button20.UseVisualStyleBackColor = true;
+            this.button20.UseVisualStyleBackColor = false;
             this.button20.Click += new System.EventHandler(this.button_Click);
             // 
             // dessertdrinkPanel
@@ -528,86 +517,94 @@ namespace regal_spice
             this.dessertdrinkPanel.Controls.Add(this.button14, 1, 1);
             this.dessertdrinkPanel.Controls.Add(this.button15, 0, 2);
             this.dessertdrinkPanel.Controls.Add(this.button16, 1, 2);
-            this.dessertdrinkPanel.Location = new System.Drawing.Point(4, 4);
+            this.dessertdrinkPanel.Location = new System.Drawing.Point(55, 7);
             this.dessertdrinkPanel.Name = "dessertdrinkPanel";
             this.dessertdrinkPanel.RowCount = 4;
             this.dessertdrinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.03493F));
             this.dessertdrinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.96507F));
-            this.dessertdrinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 124F));
-            this.dessertdrinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 108F));
+            this.dessertdrinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 119F));
+            this.dessertdrinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 109F));
             this.dessertdrinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.dessertdrinkPanel.Size = new System.Drawing.Size(399, 480);
+            this.dessertdrinkPanel.Size = new System.Drawing.Size(399, 472);
             this.dessertdrinkPanel.TabIndex = 45;
             this.dessertdrinkPanel.Visible = false;
+            this.dessertdrinkPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.dessertdrinkPanel_Paint);
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(3, 374);
+            this.button17.BackColor = System.Drawing.Color.NavajoWhite;
+            this.button17.Location = new System.Drawing.Point(3, 365);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(177, 97);
+            this.button17.Size = new System.Drawing.Size(192, 104);
             this.button17.TabIndex = 51;
             this.button17.Text = "Rasmalai";
-            this.button17.UseVisualStyleBackColor = true;
+            this.button17.UseVisualStyleBackColor = false;
             this.button17.Click += new System.EventHandler(this.button_Click);
             // 
             // button11
             // 
+            this.button11.BackColor = System.Drawing.Color.NavajoWhite;
             this.button11.Location = new System.Drawing.Point(3, 3);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(177, 97);
+            this.button11.Size = new System.Drawing.Size(192, 111);
             this.button11.TabIndex = 45;
             this.button11.Text = "Gulab Jamun";
-            this.button11.UseVisualStyleBackColor = true;
+            this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button_Click);
             // 
             // button12
             // 
+            this.button12.BackColor = System.Drawing.Color.NavajoWhite;
             this.button12.Location = new System.Drawing.Point(201, 3);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(177, 97);
+            this.button12.Size = new System.Drawing.Size(177, 111);
             this.button12.TabIndex = 46;
             this.button12.Text = "Soft Drink";
-            this.button12.UseVisualStyleBackColor = true;
+            this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button_Click);
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(3, 122);
+            this.button13.BackColor = System.Drawing.Color.NavajoWhite;
+            this.button13.Location = new System.Drawing.Point(3, 120);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(177, 97);
+            this.button13.Size = new System.Drawing.Size(192, 120);
             this.button13.TabIndex = 47;
             this.button13.Text = "Mango Lassi";
-            this.button13.UseVisualStyleBackColor = true;
+            this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button_Click);
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(201, 122);
+            this.button14.BackColor = System.Drawing.Color.NavajoWhite;
+            this.button14.Location = new System.Drawing.Point(201, 120);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(177, 97);
+            this.button14.Size = new System.Drawing.Size(177, 120);
             this.button14.TabIndex = 48;
             this.button14.Text = "Kaju Katli (3 pieces)";
-            this.button14.UseVisualStyleBackColor = true;
+            this.button14.UseVisualStyleBackColor = false;
             this.button14.Click += new System.EventHandler(this.button_Click);
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(3, 250);
+            this.button15.BackColor = System.Drawing.Color.NavajoWhite;
+            this.button15.Location = new System.Drawing.Point(3, 246);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(177, 97);
+            this.button15.Size = new System.Drawing.Size(192, 113);
             this.button15.TabIndex = 49;
             this.button15.Text = "Payasam";
-            this.button15.UseVisualStyleBackColor = true;
+            this.button15.UseVisualStyleBackColor = false;
             this.button15.Click += new System.EventHandler(this.button_Click);
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(201, 250);
+            this.button16.BackColor = System.Drawing.Color.NavajoWhite;
+            this.button16.Location = new System.Drawing.Point(201, 246);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(177, 97);
+            this.button16.Size = new System.Drawing.Size(177, 113);
             this.button16.TabIndex = 50;
             this.button16.Text = "Falooda";
-            this.button16.UseVisualStyleBackColor = true;
+            this.button16.UseVisualStyleBackColor = false;
             this.button16.Click += new System.EventHandler(this.button_Click);
             // 
             // panel1
@@ -624,7 +621,7 @@ namespace regal_spice
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button48);
             this.panel1.Controls.Add(this.button41);
-            this.panel1.Location = new System.Drawing.Point(743, 265);
+            this.panel1.Location = new System.Drawing.Point(756, 265);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(289, 224);
             this.panel1.TabIndex = 47;
@@ -753,7 +750,7 @@ namespace regal_spice
             // actualEftpos
             // 
             this.actualEftpos.BackColor = System.Drawing.Color.PapayaWhip;
-            this.actualEftpos.Location = new System.Drawing.Point(501, 265);
+            this.actualEftpos.Location = new System.Drawing.Point(514, 265);
             this.actualEftpos.Name = "actualEftpos";
             this.actualEftpos.Size = new System.Drawing.Size(242, 73);
             this.actualEftpos.TabIndex = 49;
@@ -764,7 +761,7 @@ namespace regal_spice
             // actualCas
             // 
             this.actualCas.BackColor = System.Drawing.Color.PapayaWhip;
-            this.actualCas.Location = new System.Drawing.Point(501, 335);
+            this.actualCas.Location = new System.Drawing.Point(514, 335);
             this.actualCas.Name = "actualCas";
             this.actualCas.Size = new System.Drawing.Size(242, 73);
             this.actualCas.TabIndex = 50;
@@ -775,7 +772,7 @@ namespace regal_spice
             // actualClear
             // 
             this.actualClear.BackColor = System.Drawing.Color.PapayaWhip;
-            this.actualClear.Location = new System.Drawing.Point(501, 405);
+            this.actualClear.Location = new System.Drawing.Point(514, 405);
             this.actualClear.Name = "actualClear";
             this.actualClear.Size = new System.Drawing.Size(242, 74);
             this.actualClear.TabIndex = 51;
@@ -786,7 +783,7 @@ namespace regal_spice
             // fiveChange
             // 
             this.fiveChange.BackColor = System.Drawing.Color.Chocolate;
-            this.fiveChange.Location = new System.Drawing.Point(501, 2);
+            this.fiveChange.Location = new System.Drawing.Point(514, 2);
             this.fiveChange.Name = "fiveChange";
             this.fiveChange.Size = new System.Drawing.Size(124, 67);
             this.fiveChange.TabIndex = 52;
@@ -796,7 +793,7 @@ namespace regal_spice
             // tenChange
             // 
             this.tenChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(136)))), ((int)(((byte)(73)))));
-            this.tenChange.Location = new System.Drawing.Point(501, 66);
+            this.tenChange.Location = new System.Drawing.Point(514, 66);
             this.tenChange.Name = "tenChange";
             this.tenChange.Size = new System.Drawing.Size(124, 67);
             this.tenChange.TabIndex = 54;
@@ -806,7 +803,7 @@ namespace regal_spice
             // commentButt
             // 
             this.commentButt.BackColor = System.Drawing.Color.SandyBrown;
-            this.commentButt.Location = new System.Drawing.Point(619, 132);
+            this.commentButt.Location = new System.Drawing.Point(632, 132);
             this.commentButt.Name = "commentButt";
             this.commentButt.Size = new System.Drawing.Size(124, 67);
             this.commentButt.TabIndex = 57;
@@ -817,7 +814,7 @@ namespace regal_spice
             // twentyChange
             // 
             this.twentyChange.BackColor = System.Drawing.Color.SandyBrown;
-            this.twentyChange.Location = new System.Drawing.Point(501, 132);
+            this.twentyChange.Location = new System.Drawing.Point(514, 132);
             this.twentyChange.Name = "twentyChange";
             this.twentyChange.Size = new System.Drawing.Size(124, 67);
             this.twentyChange.TabIndex = 56;
@@ -827,7 +824,7 @@ namespace regal_spice
             // hundredChange
             // 
             this.hundredChange.BackColor = System.Drawing.Color.NavajoWhite;
-            this.hundredChange.Location = new System.Drawing.Point(619, 198);
+            this.hundredChange.Location = new System.Drawing.Point(632, 198);
             this.hundredChange.Name = "hundredChange";
             this.hundredChange.Size = new System.Drawing.Size(124, 67);
             this.hundredChange.TabIndex = 59;
@@ -838,7 +835,7 @@ namespace regal_spice
             // fiftyChange
             // 
             this.fiftyChange.BackColor = System.Drawing.Color.NavajoWhite;
-            this.fiftyChange.Location = new System.Drawing.Point(501, 198);
+            this.fiftyChange.Location = new System.Drawing.Point(514, 198);
             this.fiftyChange.Name = "fiftyChange";
             this.fiftyChange.Size = new System.Drawing.Size(124, 67);
             this.fiftyChange.TabIndex = 58;
@@ -848,9 +845,9 @@ namespace regal_spice
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(743, -2);
+            this.richTextBox1.Location = new System.Drawing.Point(756, 32);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(289, 207);
+            this.richTextBox1.Size = new System.Drawing.Size(286, 173);
             this.richTextBox1.TabIndex = 60;
             this.richTextBox1.Text = "";
             this.richTextBox1.SelectionChanged += new System.EventHandler(this.richTextBox1_SelectionChanged);
@@ -858,20 +855,21 @@ namespace regal_spice
             // richTextBox2
             // 
             this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox2.Location = new System.Drawing.Point(745, 231);
+            this.richTextBox2.Location = new System.Drawing.Point(756, 231);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(284, 34);
+            this.richTextBox2.Size = new System.Drawing.Size(286, 34);
             this.richTextBox2.TabIndex = 61;
             this.richTextBox2.Text = "";
             // 
             // button9
             // 
+            this.button9.BackColor = System.Drawing.Color.PapayaWhip;
             this.button9.Location = new System.Drawing.Point(3, 95);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(177, 97);
             this.button9.TabIndex = 44;
             this.button9.Text = "Chutney (Lime, Mango, Tomato)";
-            this.button9.UseVisualStyleBackColor = true;
+            this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button_Click);
             // 
             // sidesPanel
@@ -884,7 +882,7 @@ namespace regal_spice
             this.sidesPanel.Controls.Add(this.button7, 1, 1);
             this.sidesPanel.Controls.Add(this.button4, 1, 0);
             this.sidesPanel.Controls.Add(this.button18, 0, 0);
-            this.sidesPanel.Location = new System.Drawing.Point(12, 1);
+            this.sidesPanel.Location = new System.Drawing.Point(436, 24);
             this.sidesPanel.Name = "sidesPanel";
             this.sidesPanel.RowCount = 6;
             this.sidesPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.17949F));
@@ -900,38 +898,41 @@ namespace regal_spice
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.Color.PapayaWhip;
             this.button7.Location = new System.Drawing.Point(186, 95);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(177, 97);
             this.button7.TabIndex = 45;
             this.button7.Text = "Fresh Herbs (Coriander, Mint)";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.PapayaWhip;
             this.button4.Location = new System.Drawing.Point(186, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(177, 86);
             this.button4.TabIndex = 52;
             this.button4.Text = "Cucumber Raita";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button_Click);
             // 
             // button18
             // 
+            this.button18.BackColor = System.Drawing.Color.PapayaWhip;
             this.button18.Location = new System.Drawing.Point(3, 3);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(177, 86);
             this.button18.TabIndex = 51;
             this.button18.Text = "Pappadum (2)";
-            this.button18.UseVisualStyleBackColor = true;
+            this.button18.UseVisualStyleBackColor = false;
             this.button18.Click += new System.EventHandler(this.button_Click);
             // 
             // button46
             // 
             this.button46.BackColor = System.Drawing.Color.Chocolate;
-            this.button46.Location = new System.Drawing.Point(619, 1);
+            this.button46.Location = new System.Drawing.Point(632, 1);
             this.button46.Name = "button46";
             this.button46.Size = new System.Drawing.Size(124, 68);
             this.button46.TabIndex = 64;
@@ -942,7 +943,7 @@ namespace regal_spice
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(844, 9);
+            this.label1.Location = new System.Drawing.Point(857, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 20);
             this.label1.TabIndex = 65;
@@ -950,7 +951,7 @@ namespace regal_spice
             // 
             // insertComment
             // 
-            this.insertComment.Location = new System.Drawing.Point(336, 140);
+            this.insertComment.Location = new System.Drawing.Point(349, 140);
             this.insertComment.Name = "insertComment";
             this.insertComment.Size = new System.Drawing.Size(329, 119);
             this.insertComment.TabIndex = 66;
@@ -971,16 +972,16 @@ namespace regal_spice
             // commentBox
             // 
             this.commentBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.commentBox.Location = new System.Drawing.Point(745, 198);
+            this.commentBox.Location = new System.Drawing.Point(756, 198);
             this.commentBox.Name = "commentBox";
-            this.commentBox.Size = new System.Drawing.Size(288, 34);
+            this.commentBox.Size = new System.Drawing.Size(286, 34);
             this.commentBox.TabIndex = 69;
             this.commentBox.Text = "";
             // 
             // button47
             // 
             this.button47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(136)))), ((int)(((byte)(73)))));
-            this.button47.Location = new System.Drawing.Point(619, 68);
+            this.button47.Location = new System.Drawing.Point(632, 68);
             this.button47.Name = "button47";
             this.button47.Size = new System.Drawing.Size(124, 65);
             this.button47.TabIndex = 70;
@@ -994,7 +995,9 @@ namespace regal_spice
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1033, 481);
+            this.ClientSize = new System.Drawing.Size(1043, 481);
+            this.Controls.Add(this.curryPanel);
+            this.Controls.Add(this.entreeButton);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.button47);
             this.Controls.Add(this.commentBox);
@@ -1016,13 +1019,11 @@ namespace regal_spice
             this.Controls.Add(this.dessertButton);
             this.Controls.Add(this.riceButton);
             this.Controls.Add(this.curryButton);
-            this.Controls.Add(this.entreeButton);
+            this.Controls.Add(this.insertComment);
+            this.Controls.Add(this.enterComment);
             this.Controls.Add(this.sidesPanel);
             this.Controls.Add(this.dessertdrinkPanel);
             this.Controls.Add(this.entreePanel);
-            this.Controls.Add(this.curryPanel);
-            this.Controls.Add(this.insertComment);
-            this.Controls.Add(this.enterComment);
             this.DoubleBuffered = true;
             this.Name = "orderForm";
             this.Text = "Form1";
@@ -1048,7 +1049,6 @@ namespace regal_spice
         private System.Windows.Forms.Button sidesButton;
         private System.Windows.Forms.TableLayoutPanel ricebreadPanel;
         private System.Windows.Forms.TableLayoutPanel entreePanel;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TableLayoutPanel curryPanel;
         private System.Windows.Forms.TableLayoutPanel dessertdrinkPanel;
         private System.Windows.Forms.Panel panel1;
@@ -1077,8 +1077,6 @@ namespace regal_spice
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button30;
         private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button25;
@@ -1094,7 +1092,6 @@ namespace regal_spice
         private System.Windows.Forms.Button button36;
         private System.Windows.Forms.Button button35;
         private System.Windows.Forms.Button button41;
-        private System.Windows.Forms.Button button45;
         private System.Windows.Forms.Button button44;
         private System.Windows.Forms.Button button43;
         private System.Windows.Forms.Button button42;
@@ -1116,6 +1113,8 @@ namespace regal_spice
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button48;
         private System.Windows.Forms.Button button47;
+        private System.Windows.Forms.Button button49;
+        private System.Windows.Forms.Button button45;
     }
 }
 

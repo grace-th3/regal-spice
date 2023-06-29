@@ -74,20 +74,20 @@ namespace regal_spice
             // 
             // toolStrip1
             // 
-            this.toolStrip1.BackColor = System.Drawing.Color.LightCoral;
+            this.toolStrip1.BackColor = System.Drawing.Color.Salmon;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(826, 38);
+            this.toolStrip1.Size = new System.Drawing.Size(826, 30);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(101, 33);
+            this.toolStripLabel1.Size = new System.Drawing.Size(101, 25);
             this.toolStripLabel1.Text = "Main Menu";
             this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
             // 
@@ -97,7 +97,7 @@ namespace regal_spice
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(826, 606);
+            this.ClientSize = new System.Drawing.Size(826, 614);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.changeButton);
             this.Controls.Add(this.textBox3);

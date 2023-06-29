@@ -22,7 +22,7 @@ namespace regal_spice
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string desiredValue = "password"; // The desired value to compare against//
+            string desiredValue = Properties.Settings.Default.currentPassword; // The desired value to compare against//
             
             if (passwordBox.Text == desiredValue)
             {
@@ -39,6 +39,11 @@ namespace regal_spice
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void startupForm_Load(object sender, EventArgs e)
         {
 
         }

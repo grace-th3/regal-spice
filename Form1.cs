@@ -31,9 +31,10 @@ namespace regal_spice
             populateMenu();
             clearPanels();
             entreePanel.Visible = true;
-            entreePanel.Location = new Point(100, 6);
+            entreePanel.Location = new Point(98, 4);
             myOrderCounter();
         }
+        //entree panel is placed for the startup view and initial location of entree panel
 
         private void myOrderCounter()
         {
@@ -76,12 +77,13 @@ namespace regal_spice
             //sides
             menu.Add(new Dish("Pappadum (2)", (decimal)1.10));
             menu.Add(new Dish("Cucumber Raita", (decimal)3.75));
-            menu.Add(new Dish("Chutney (Lime, Mango, Tomato)", (decimal)2.99));
-            menu.Add(new Dish("Fresh Herbs (Coriander, Mint)", (decimal)0.00));
+            menu.Add(new Dish("Lime Pickle", (decimal)2.99));
+            menu.Add(new Dish("Mango Pickle", (decimal)2.99));
+            menu.Add(new Dish("Fresh Herbs", (decimal)0.00));
             //entrees
             menu.Add(new Dish("Veg Samosa", (decimal) 7.50));
             menu.Add(new Dish("Onion Bhaji (2 pieces)", (decimal)7.50));
-            menu.Add(new Dish("Pakora (Veg, Chicken)", (decimal)7.50));
+            menu.Add(new Dish("Veg Pakora", (decimal)7.50));
             menu.Add(new Dish("Chicken Tikka (2 pieces)", (decimal)9.50));
             menu.Add(new Dish("Lamb Cutlet", (decimal)9.50));
             menu.Add(new Dish("Chilli Prawns", (decimal)9.50));
@@ -98,9 +100,9 @@ namespace regal_spice
             menu.Add(new Dish("Dal Makhni", (decimal)14.90));
             menu.Add(new Dish("Kadai Paneer", (decimal)14.90));
             //rices and breads
-            menu.Add(new Dish("Biryani (Chicken, Beef, Veg)", (decimal)17.50));
+            menu.Add(new Dish("Chicken Biriyani", (decimal)17.50));
             menu.Add(new Dish("Basmati Rice (1 serve)", (decimal)4.70));
-            menu.Add(new Dish("Naan (Cheese, Garlic, Butter)", (decimal)7.50));
+            menu.Add(new Dish("Garlic Naan", (decimal)7.50));
             menu.Add(new Dish("Dosa (1 piece)", (decimal)5.40));
             menu.Add(new Dish("Roti (1 piece)", (decimal)4.70));
             menu.Add(new Dish("Poori (1 piece)", (decimal)6.49));
@@ -136,7 +138,7 @@ namespace regal_spice
         {
             clearPanels();
             entreePanel.Visible = true;
-            entreePanel.Location = new Point(100, 6);
+            entreePanel.Location = new Point(10, 6);
 
         }
 
@@ -178,17 +180,6 @@ namespace regal_spice
 
         }
 
-        
-
-
-
-
-
-
-
-
-
-
         //clears the textbox and appends it with all the selected items + includes their prices
         private void refreshTextbox()
         {
@@ -199,7 +190,7 @@ namespace regal_spice
 
             foreach (Dish dish in Program.orderedItems)
             {
-                richTextBox1.AppendText(Environment.NewLine + Environment.NewLine + " " + dish.name + dish.price.ToString());
+                richTextBox1.AppendText( Environment.NewLine + dish.name + " "  + dish.price.ToString());
 
             }
         }
@@ -402,10 +393,19 @@ namespace regal_spice
         {
             int index = richTextBox1.SelectionStart;
             int line = richTextBox1.GetLineFromCharIndex(index);
-            Program.orderedItems.RemoveAt(line - 1);
-            refreshTextbox();
-            sumTotal();
 
+            try
+            {
+
+                Program.orderedItems.RemoveAt(line - 1);
+                refreshTextbox();
+                sumTotal();
+
+            }
+            catch
+            {
+
+            }
         }
 
 
@@ -420,7 +420,7 @@ namespace regal_spice
         private void enterComment_Click(object sender, EventArgs e)
         {
             Program.comments = insertComment.Text;
-            commentBox.AppendText(Environment.NewLine + "'" +insertComment.Text + "'");
+            commentBox.AppendText(Environment.NewLine + Environment.NewLine +  "'" +insertComment.Text + "'");
             insertComment.Visible = false;
             enterComment.Visible = false;
         }
@@ -483,6 +483,16 @@ namespace regal_spice
             this.Hide();
             Form5 form5 = new Form5();
             form5.Show();
+
+        }
+
+        private void dessertdrinkPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void curryPanel_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
